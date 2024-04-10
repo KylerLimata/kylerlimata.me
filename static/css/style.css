@@ -21,3 +21,7 @@ sidebar {
     border-radius: 50%;
     margin-left: 15%;
 }
+
+.main {
+    padding-left: var(--sidebar-size);
+}
