@@ -35,11 +35,20 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <sidebar>
     <img src={{ get_url(path="images/pfp.jpg") }} class="profile-picture">
+    <div style="width: 100%;">
+      {% set social_data = load_data(path="socials.json") %}
+      {% for social in social_data %}
+        {% set icon_url = get_url(path="images/socials/" ~ social["icon"]) %}
+        <a href={{ social["url"] }}>
+          <img src={{ icon_url }} style="width: 32px;">
+        </a>
+      {% endfor %}
+    </div>
     <hr>
     {% set nav_data = load_data(path="navigation.json") %}
     {% for nav in nav_data %}
-      {% set url = get_url(path=nav["path"]) %}
-      <a href={{ url }} class="nav-link">{{ nav["text"] }}</a>
+      {% set nav_url = get_url(path=nav["path"]) %}
+      <a href={{ nav_url }} class="nav-link">{{ nav["text"] }}</a>
     {% endfor %}
     <hr>
   </sidebar>
