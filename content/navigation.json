@@ -1,14 +1,14 @@
 [
     {
-        "text": "About",
+        "title": "About",
         "path": "/"
     },
     {
-        "text": "Resume/CV",
-        "path": "/"
+        "title": "Resume/CV",
+        "path": "/resume"
     },
     {
-        "text": "Projects",
-        "path": "/"
+        "title": "Projects",
+        "path": "/projects"
     }
 ]

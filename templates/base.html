@@ -22,7 +22,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href={{ get_url(path="css/style.css")}}>
+  <link rel="stylesheet" href={{ get_url(path="css/style.css") }}>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -48,7 +48,14 @@
     {% set nav_data = load_data(path="navigation.json") %}
     {% for nav in nav_data %}
       {% set nav_url = get_url(path=nav["path"]) %}
-      <a href={{ nav_url }} class="nav-link">{{ nav["text"] }}</a>
+      {% set title = nav["title"] %}
+      {% set classes = "nav-link" %}
+
+      {% if title == section.title %}
+        {% set classes = "nav-link current" %}
+      {% endif %}
+
+      <a href="{{ nav_url }}" class="{{ classes }}">{{ nav["title"] }}</a>
     {% endfor %}
     <hr>
     <div class="copyright-box">

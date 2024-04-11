@@ -53,6 +53,10 @@ sidebar {
     color: var(--accent-color);
     border-right: 8px solid var(--accent-color);
 }
+.nav-link.current {
+    color: var(--accent-color);
+    border-right: 8px solid var(--accent-color);
+}
 
 .copyright-box {
     margin-top: auto;
