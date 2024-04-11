@@ -2,5 +2,13 @@
     {
         "text": "About",
         "path": "/"
+    },
+    {
+        "text": "Resume/CV",
+        "path": "/"
+    },
+    {
+        "text": "Projects",
+        "path": "/"
     }
 ]

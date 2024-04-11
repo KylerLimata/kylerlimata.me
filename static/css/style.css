@@ -1,5 +1,8 @@
 :root {
-    --sidebar-size: 16%
+    --sidebar-size: 16%;
+    --dark-text: #111;
+    --light-text: #dedede;
+    --accent-color: #00919e;
 }
 
 sidebar {
@@ -12,16 +15,32 @@ sidebar {
     background-color: #1a1a1a; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
-    color: #dedede;
+    color: var(--light-text);
 }
 
 .profile-picture {
-    width: 70%;
+    width: 60%;
     height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
     border-radius: 50%;
-    margin-left: 15%;
 }
 
 .main {
     padding-left: var(--sidebar-size);
+}
+
+.nav-link {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    width: auto;
+    font-size: 4rem;
+    color: var(--light-text);
+    border-right: 8px solid var(--light-text);
+}
+.nav-link:hover {
+    color: var(--accent-color);
+    border-right: 8px solid var(--accent-color);
 }

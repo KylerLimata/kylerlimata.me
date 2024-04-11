@@ -16,6 +16,7 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,14 +34,14 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <sidebar>
-    <div>
-      <img src={{ get_url(path="images/pfp.jpg") }} class="profile-picture">
-    </div>
+    <img src={{ get_url(path="images/pfp.jpg") }} class="profile-picture">
+    <hr>
     {% set nav_data = load_data(path="navigation.json") %}
     {% for nav in nav_data %}
       {% set url = get_url(path=nav["path"]) %}
-      <a href={{ url }}>{{ nav["text"] }}</a>
+      <a href={{ url }} class="nav-link">{{ nav["text"] }}</a>
     {% endfor %}
+    <hr>
   </sidebar>
   <div class="main">
     {% block content %}{% endblock content %}
