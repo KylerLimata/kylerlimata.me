@@ -33,7 +33,14 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <sidebar>
-    <img src={{ get_url(path="images/pfp.jpg") }} class="profile-picture">
+    <div>
+      <img src={{ get_url(path="images/pfp.jpg") }} class="profile-picture">
+    </div>
+    {% set nav_data = load_data(path="navigation.json") %}
+    {% for nav in nav_data %}
+      {% set url = get_url(path=nav["path"]) %}
+      <a href={{ url }}>{{ nav["text"] }}</a>
+    {% endfor %}
   </sidebar>
   <div class="main">
     {% block content %}{% endblock content %}
