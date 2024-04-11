@@ -54,6 +54,11 @@ sidebar {
     border-right: 8px solid var(--accent-color);
 }
 
+.copyright-box {
+    margin-top: auto;
+    text-align: center;
+}
+
 .main {
     padding-left: var(--sidebar-size);
 }
