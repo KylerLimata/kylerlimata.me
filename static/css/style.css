@@ -30,8 +30,13 @@ sidebar {
 .socials-box {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
+}
+.social-link {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .nav-link {

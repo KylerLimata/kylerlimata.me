@@ -39,7 +39,7 @@
       {% set social_data = load_data(path="socials.json") %}
       {% for social in social_data %}
         {% set icon_url = get_url(path="images/socials/" ~ social["icon"]) %}
-        <a href={{ social["url"] }}>
+        <a href={{ social["url"] }} class="social-link">
           <img src={{ icon_url }} style="width: 32px;">
         </a>
       {% endfor %}
