@@ -35,7 +35,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <sidebar>
     <img src={{ get_url(path="images/pfp.jpg") }} class="profile-picture">
-    <div style="width: 100%;">
+    <div class="socials-box">
       {% set social_data = load_data(path="socials.json") %}
       {% for social in social_data %}
         {% set icon_url = get_url(path="images/socials/" ~ social["icon"]) %}
