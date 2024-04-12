@@ -1,4 +1,64 @@
 +++
 title="Resume/CV"
-template="index.html"
+template="resume.html"
 +++
+
+# Education
+
+**Master in Mechanical Engineering**, Saint Martin's University\
+Expected Graducation: August 2025\
+GPA: 3.9
+
+**Bachelor in Mechanical Engineering**, Saint Martin's University\
+Graduated May 2022\
+GPA: 3.52, Cum Laude, Dean's List
+
+# Work Experience
+
+**Waitstaff - Careage (Patriot's Landing)**\
+Febuary 2024 - Present
+- foo
+- bar
+
+**Graduate Assistant - Saint Martin's University**
+- foo
+- bar
+
+# Projects
+
+**Motion Simulation of 2-Link Robot Arm**\
+November 2023 - December 2023
+- Collaborated with partner
+- bar
+
+**Vibration Simulation of 3D Printer**\
+September 2023 - October 2023
+- foo
+- bar
+
+**Electric Car Machine Learning**\
+July 2023 - August 2023
+- Co-led team of four to develop
+- foo
+
+**Rack and Pinion Finite Element Simulation**\
+January 2023 - April 2023
+- foo
+- bar
+
+**Spherical Fluid Pulsation Dampener - Capstone Project**\
+September 2021 - April 2022
+- Collaborated with partner to develop and test prototype spherical fluid pulations dampener using prior research
+- bar
+
+**Firefly Optimization Algorithm**\
+April 2022
+- foo
+- bar
+
+**Computer Chip Thermal Simulation**\
+December 2021
+- foo
+- bar
+
+# Other Skills
