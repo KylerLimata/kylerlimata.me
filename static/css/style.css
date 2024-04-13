@@ -37,8 +37,10 @@ sidebar {
     height: auto;
     margin-left: 20%;
     margin-right: 20%;
-    border-radius: 50%;
     margin-bottom: 5%;
+}
+.profile-picture.circle {
+    border-radius: 50%;
 }
 
 .socials-box {
