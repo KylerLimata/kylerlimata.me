@@ -40,7 +40,9 @@ September 2023 - October 2023
 **Electric Car Machine Learning**\
 July 2023 - August 2023
 - Co-led team of four to develop
+- Co-led team of four to
 - foo
+- Independently developed specialized Q-Table class
 
 **Rack and Pinion Finite Element Simulation**\
 January 2023 - April 2023
@@ -50,17 +52,20 @@ January 2023 - April 2023
 **Spherical Fluid Pulsation Dampener - Capstone Project**\
 September 2021 - April 2022
 - Collaborated with partner to develop and test prototype spherical fluid pulations dampener using prior research
-- bar
+- Developed 3D CAD models of housing, distributor plate, and receiver plate parts in Autodesk Inventor
+- Created 2D CAD drawings with General Dimensioning in Autodesk Inventor
+- Simulated fluid dynamics and structural stress of design in ANSYS Fluent
+- Utilized mechatronics knowledge to develop Raspberry Pi program to interface with pressure sensors via ADC
 
 **Firefly Optimization Algorithm**\
 April 2022
-- foo
-- bar
+- Implemented Firefly Metaheuristic Algorithm in MATLAB
+- Evaluated implementation against the Travelling Salesman problem
 
 **Computer Chip Thermal Simulation**\
 December 2021
 - foo
-- bar
+- Ran thermal simulation
 
 # Other Skills
 ------
