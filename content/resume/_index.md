@@ -39,7 +39,6 @@ September 2023 - October 2023
 
 **Electric Car Machine Learning**\
 July 2023 - August 2023
-- Co-led team of four to develop
 - Co-led team of four to
 - foo
 - Independently developed specialized Q-Table class
