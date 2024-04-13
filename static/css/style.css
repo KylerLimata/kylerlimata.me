@@ -12,7 +12,7 @@ sidebar {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #1a1a1a; /* Black */
+    background-color: #262424; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     color: var(--light-text);
@@ -56,6 +56,14 @@ sidebar {
 .nav-link.current {
     color: var(--accent-color);
     border-right: 8px solid var(--accent-color);
+}
+.nav-link-box {
+    border-top: 1px solid black;
+}
+.nav-links {
+    border-bottom: 1px solid black;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .copyright-box {

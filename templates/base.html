@@ -44,20 +44,22 @@
         </a>
       {% endfor %}
     </div>
-    <hr>
-    {% set nav_data = load_data(path="navigation.json") %}
-    {% for nav in nav_data %}
-      {% set nav_url = get_url(path=nav["path"]) %}
-      {% set title = nav["title"] %}
-      {% set classes = "nav-link" %}
-
-      {% if title == section.title %}
-        {% set classes = "nav-link current" %}
-      {% endif %}
-
-      <a href="{{ nav_url }}" class="{{ classes }}">{{ nav["title"] }}</a>
-    {% endfor %}
-    <hr>
+    <div class="nav-links">
+      {% set nav_data = load_data(path="navigation.json") %}
+      {% for nav in nav_data %}
+        {% set nav_url = get_url(path=nav["path"]) %}
+        {% set title = nav["title"] %}
+        {% set classes = "nav-link" %}
+  
+        {% if title == section.title %}
+          {% set classes = "nav-link current" %}
+        {% endif %}
+  
+        <div class="nav-link-box">
+          <a href="{{ nav_url }}" class="{{ classes }}">{{ nav["title"] }}</a>
+        </div>
+      {% endfor %}
+    </div>
     <div class="copyright-box">
       Copyright &copy; 2024 Kyler Limata
     </div>
