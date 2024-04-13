@@ -4,7 +4,7 @@ template="resume.html"
 +++
 
 # Education
-
+------
 **Master in Mechanical Engineering**, Saint Martin's University\
 Expected Graducation: August 2025\
 GPA: 3.9
@@ -14,18 +14,19 @@ Graduated May 2022\
 GPA: 3.52, Cum Laude, Dean's List
 
 # Work Experience
-
+------
 **Waitstaff - Careage (Patriot's Landing)**\
 Febuary 2024 - Present
-- foo
-- bar
+- Waits on multiple tables in open dining hall
+- Assists in setup and cleanup tasks in both the dining room and kitchen
 
+\
 **Graduate Assistant - Saint Martin's University**
-- foo
-- bar
+- Graded student assignments, quizzes, and exams for Material Science, Vibration Theory, and 
+- Entered and organized student grades into Excel spreadsheets for each assignment
 
 # Projects
-
+------
 **Motion Simulation of 2-Link Robot Arm**\
 November 2023 - December 2023
 - Collaborated with partner
@@ -62,3 +63,4 @@ December 2021
 - bar
 
 # Other Skills
+------
