@@ -35,14 +35,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <sidebar>
     <img src={{ get_url(path="images/pfp.jpg") }} class="profile-picture circle">
-    <div class="socials-box">
-      {% set social_data = load_data(path="socials.json") %}
-      {% for social in social_data %}
-        {% set icon_url = get_url(path="images/socials/" ~ social["icon"]) %}
-        <a href={{ social["url"] }} class="social-link">
-          <img src={{ icon_url }} style="width: 32px;">
-        </a>
-      {% endfor %}
+    <div class="title">
+      Kyler Limata
     </div>
     <div class="nav-links">
       {% set nav_data = load_data(path="navigation.json") %}
@@ -58,6 +52,15 @@
         <div class="nav-link-box">
           <a href="{{ nav_url }}" class="{{ classes }}">{{ nav["title"] }}</a>
         </div>
+      {% endfor %}
+    </div>
+    <div class="socials-box">
+      {% set social_data = load_data(path="socials.json") %}
+      {% for social in social_data %}
+        {% set icon_url = get_url(path="images/socials/" ~ social["icon"]) %}
+        <a href={{ social["url"] }} class="social-link">
+          <img src={{ icon_url }} style="width: 32px;">
+        </a>
       {% endfor %}
     </div>
     <div class="copyright-box">
