@@ -41,11 +41,11 @@
     <div class="nav-links">
       {% set nav_data = load_data(path="navigation.json") %}
       {% for nav in nav_data %}
-        {% set nav_url = get_url(path=nav["path"]) %}
-        {% set title = nav["title"] %}
+        {% set nav_url = get_url(path=nav.path) %}
+        {% set title = nav.title %}
         {% set classes = "nav-link" %}
   
-        {% if section.title | defined and title == section.title %}
+        {% if section and title == section.title %}
           {% set classes = "nav-link current" %}
         {% endif %}
   
@@ -58,8 +58,8 @@
       {% set social_data = load_data(path="socials.json") %}
       {% for social in social_data %}
         {% set icon_url = get_url(path="images/socials/" ~ social["icon"]) %}
-        <a href={{ social["url"] }} class="social-link">
-          <img src={{ icon_url }} style="width: 32px;">
+        <a href="{{ social.url }}" class="social-link">
+          <img src="{{ icon_url }}" style="width: 32px;">
         </a>
       {% endfor %}
     </div>
