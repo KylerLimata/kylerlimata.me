@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="margin-top: 5%;">
+    <h1>Projects</h1>
+    <hr>
+    {% for page in paginator.pages %}
+        <a href="{{ page.permalink }}">{{ page.title }}</a>
+    {% endfor %}
+</div>
+{% endblock %}

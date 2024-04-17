@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Kyler Limata - {{ section.title }}</title>
+  <title>Kyler Limata - </title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -20,9 +20,9 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href={{ get_url(path="css/style.css") }}>
+  <link rel="stylesheet" href="{{ get_url(path="css/normalize.css") }}">
+  <link rel="stylesheet" href="{{ get_url(path="css/skeleton.css") }}">
+  <link rel="stylesheet" href="{{ get_url(path="css/style.css") }}">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -45,7 +45,7 @@
         {% set title = nav["title"] %}
         {% set classes = "nav-link" %}
   
-        {% if title == section.title %}
+        {% if section.title | defined and title == section.title %}
           {% set classes = "nav-link current" %}
         {% endif %}
   
