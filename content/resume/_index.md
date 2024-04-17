@@ -58,3 +58,7 @@ GPA: 3.52\
 
 # Other Skills
 ------
+
+**Software**: MATLAB, Autodesk Inventor, ANSYS\
+**Microsoft Office**: Word, Excel, Powerpoint, Teams\
+**Programming Languages**: Python, Rust, C, Java
