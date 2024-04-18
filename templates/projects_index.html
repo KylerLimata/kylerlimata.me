@@ -4,8 +4,13 @@
 <div style="margin-top: 5%;">
     <h1>Projects</h1>
     <hr>
-    {% for page in paginator.pages %}
-        <a href="{{ page.permalink }}">{{ page.title }}</a>
-    {% endfor %}
+    <div style="width: 90%;margin-left: 5%;">
+        {% for page in paginator.pages %}
+        <h3>{{ page.title }}</h3>
+        <p>{{ page.extra.summary | safe }}</p>
+        <a href="{{ page.permalink }}">Read more >>></a>
+        <hr>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
