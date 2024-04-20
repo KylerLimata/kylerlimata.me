@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{% block title %} {{ section.title }} {% endblock title %}</title>
+  <title>{%- block title -%}{{ section.title }}{%- endblock title -%}</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -39,29 +39,29 @@
       Kyler Limata
     </div>
     <div class="nav-links">
-      {% set nav_data = load_data(path="navigation.json") %}
-      {% for nav in nav_data %}
-        {% set nav_url = get_url(path=nav.path) %}
-        {% set title = nav.title %}
-        {% set classes = "nav-link" %}
+      {%- set nav_data = load_data(path="navigation.json") -%}
+      {%- for nav in nav_data -%}
+        {%- set nav_url = get_url(path=nav.path) -%}
+        {%- set title = nav.title -%}
+        {%- set classes = "nav-link" -%}
   
-        {% if section and title == section.title %}
-          {% set classes = "nav-link current" %}
-        {% endif %}
+        {%- if section and title == section.title -%}
+          {%- set classes = "nav-link current" -%}
+        {%- endif -%}
   
         <div class="nav-link-box">
           <a href="{{ nav_url }}" class="{{ classes }}">{{ nav["title"] }}</a>
         </div>
-      {% endfor %}
+      {%- endfor -%}
     </div>
     <div class="socials-box">
-      {% set social_data = load_data(path="socials.json") %}
-      {% for social in social_data %}
-        {% set icon_url = get_url(path="images/socials/" ~ social["icon"]) %}
+      {%- set social_data = load_data(path="socials.json") -%}
+      {%- for social in social_data -%}
+        {%- set icon_url = get_url(path="images/socials/" ~ social.icon) -%}
         <a href="{{ social.url }}" class="social-link">
           <img src="{{ icon_url }}" style="width: 32px;">
         </a>
-      {% endfor %}
+      {%- endfor -%}
     </div>
     <div class="copyright-box">
       Copyright &copy; 2024 Kyler Limata
