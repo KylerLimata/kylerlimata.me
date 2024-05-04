@@ -5,8 +5,6 @@ class GalleryElement extends HTMLElement {
         super();
         this.img = document.createElement("img");
         this.index = 0;
-        this.length = 0;
-        this.json = null;
     }
 
     connectedCallback () {
@@ -81,7 +79,6 @@ class GalleryElement extends HTMLElement {
 
     changeImage(by) {
         this.index += by;
-        const gallery = this;
 
         if (this.index < 0 ) {
             this.index = this.json.length - 1;
@@ -90,9 +87,7 @@ class GalleryElement extends HTMLElement {
             this.index = 0;
         }
 
-        this.img.src = this.json[this.index].src
-
-        console.log("Index: ", this.index)
+        this.img.src = this.json[this.index].src;
     }
 }
 
