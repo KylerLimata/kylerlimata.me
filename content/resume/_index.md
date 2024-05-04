@@ -3,16 +3,6 @@ title="Resume/CV"
 template="resume.html"
 +++
 
-# Work Experience
-------
-{{ position(title="Waitstaff",company="Careage (Patriot's Landing)",duration="Febuary 2024 - Present") }}
-- Waits on multiple tables in open dining hall
-- Assists in setup and cleanup tasks in both the dining room and kitchen
-
-{{ position(title="Graduate Assistant",company="Saint Martin's University",duration="September - December 2023") }}
-- Graded student assignments, quizzes, and exams for Material Science, Vibration Theory, and 
-- Entered and organized student grades into Excel spreadsheets for each assignment
-
 # Projects
 ------
 {{ position(title="Motion Simulation of 2-Link Robot Arm",company="Saint Martin's University",duration="November 2023 - December 2023") }}
@@ -49,6 +39,16 @@ template="resume.html"
 - Ran transient and steady-state thermal simulations in ANSYS of a simplified computer rack model with two major chips
 - Optimized the position of the two major computer chips based on minimum temperature in steady-state simulation
 - Wrote technical report on simulation results
+
+# Work Experience
+------
+{{ position(title="Waitstaff",company="Patriots Landing Operations LLC",duration="Febuary 2024 - Present") }}
+- Waits on and cleans up multiple tables in an open dining hall, including assiting other servers with their tables when necessary
+- Assists in setup and cleanup tasks in both the dining room and kitchen
+
+{{ position(title="Graduate Assistant",company="Saint Martin's University",duration="September - December 2023") }}
+- Graded student assignments, quizzes, and exams for Material Science, Vibration Theory, and 
+- Entered and organized student grades into Excel spreadsheets for each assignment
 
 # Education
 ------
