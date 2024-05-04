@@ -2,5 +2,9 @@
     {
         "src": "AssemblyCrossSection.png",
         "caption": "Assembly cross section"
+    },
+    {
+        "src": "DampenerAssembly.png",
+        "caption": "Damper assembly from outside"
     }
 ]
