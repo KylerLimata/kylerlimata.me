@@ -7,7 +7,18 @@ class GalleryElement extends HTMLElement {
     }
 
     connectedCallback () {
-        console.log("Galley added to page!")
+        console.log("Galley added to page!");
+
+        const shadow = this.attachShadow({ mode: 'open' });
+        const img = this.img
+
+        shadow.appendChild(img)
+
+        this.json = fetch(this.getAttribute("src"))
+            .then(res => res.json())
+            .then(val => {
+                img.src = val[0].src;
+            });
     }
 }
 

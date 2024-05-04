@@ -13,7 +13,7 @@ For my senior design/capstone project, I worked with a partner to create a proto
 
 ## CAD Modelling
 
-{% gallery(images=["AssemblyCrossSection.PNG"]) %}
+{% gallery(src="assembly_gallery.json") %}
 One of my responsibilities was creating the CAD model for the prototype. After iterating on the design, we settled on an assembly consisting of four different parts: two housing components with built-in pipes and separate receiver and distributor plates. The plates are only shown separately for presentation purposes as they were each 3D printed with half of the housing.
 {% end %}
 
