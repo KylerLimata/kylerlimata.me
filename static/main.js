@@ -4,6 +4,7 @@ class GalleryElement extends HTMLElement {
     constructor() {
         super();
         this.img = document.createElement("img");
+        this.caption_box = document.createElement("div");
         this.index = 0;
     }
 
@@ -17,6 +18,7 @@ class GalleryElement extends HTMLElement {
         const img = this.img
         const button_left = document.createElement("button");
         const button_right = document.createElement("button");
+        const caption_box = this.caption_box;
 
         style.textContent = `
             .container {
@@ -54,6 +56,7 @@ class GalleryElement extends HTMLElement {
         container.appendChild(style);
         container.appendChild(button_left);
         container.appendChild(button_right);
+        shadow.appendChild(caption_box)
 
         container.classList = "container"
         button_left.classList = "left-button"
@@ -64,7 +67,9 @@ class GalleryElement extends HTMLElement {
         fetch(this.getAttribute("src"))
             .then(res => res.json())
             .then(val => {
-                img.src = val[0].src;
+                const data = val[0]
+                img.src = data.src;
+                caption_box.textContent = data.caption;
                 gallery.json = val
             });
         
@@ -87,7 +92,9 @@ class GalleryElement extends HTMLElement {
             this.index = 0;
         }
 
-        this.img.src = this.json[this.index].src;
+        const data = this.json[this.index];
+        this.img.src = data.src;
+        this.caption_box.textContent = data.caption;
     }
 }
 
