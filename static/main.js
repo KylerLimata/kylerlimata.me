@@ -10,9 +10,17 @@ class GalleryElement extends HTMLElement {
         console.log("Galley added to page!");
 
         const shadow = this.attachShadow({ mode: 'open' });
+        const style = document.createElement("style");
         const img = this.img
 
+        style.textContent = `
+            img {
+                width: 100%;
+            }
+        `
+
         shadow.appendChild(img)
+        shadow.appendChild(style)
 
         this.json = fetch(this.getAttribute("src"))
             .then(res => res.json())
