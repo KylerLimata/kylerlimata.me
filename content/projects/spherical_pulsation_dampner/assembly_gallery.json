@@ -6,5 +6,17 @@
     {
         "src": "DampenerAssembly.png",
         "caption": "Damper assembly from outside"
+    },
+    {
+        "src": "Housing.png",
+        "caption": "Dampener housing half"
+    },
+    {
+        "src": "DistributorPlate.png",
+        "caption": "Dampener distributor plate"
+    },
+    {
+        "src": "ReceiverPlateCrossSection.png",
+        "caption": "Dampener receiver plate cross section"
     }
 ]
