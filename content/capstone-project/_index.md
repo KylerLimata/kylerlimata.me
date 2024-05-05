@@ -1,3 +1,3 @@
 +++
-redirect_to="/projects/spherical-pulsation-dampner/"
+redirect_to="/projects/spherical-pulsation-dampener/"
 +++

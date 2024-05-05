@@ -1,6 +1,6 @@
 +++
-title = "Spherical Pulsation Dampner"
-extra.summary = "For my Capstone Project, I collaborated with a partner to develop a spherical fluid pulsation dampner, which dampens fluid pulsations by creating a vortex internally."
+title = "Spherical Pulsation Dampener"
+extra.summary = "For my Capstone Project, I collaborated with a partner to develop a spherical fluid pulsation dampener, which dampens fluid pulsations by creating a vortex internally."
 +++
 
 # Overview
