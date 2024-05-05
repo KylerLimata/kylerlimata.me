@@ -9,6 +9,7 @@ body {
     background-color: #f0f1f2;
 }
 
+/* Sidebar */
 sidebar {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: var(--sidebar-size); /* Set the width of the sidebar */
@@ -48,6 +49,7 @@ sidebar {
     font-weight: 700;
 }
 
+/* Socials */
 .socials-box {
     display: flex;
     flex-direction: row;
@@ -60,6 +62,7 @@ sidebar {
     margin-right: 5%;
 }
 
+/* Navigation */
 .nav-link {
     display: block;
     font-family: "Roboto", sans-serif;
@@ -92,12 +95,9 @@ sidebar {
     text-align: center;
 }
 
+/* Content */
 .main {
     padding-left: var(--sidebar-size);
-}
-
-img {
-    border-radius: 16px;
 }
 
 /* Larger than tablet */
