@@ -16,6 +16,7 @@ class GalleryElement extends HTMLElement {
         const style = document.createElement("style");
         const container = document.createElement("div");
         const img = this.img
+        const button_container = document.createElement("div");
         const button_left = document.createElement("button");
         const button_right = document.createElement("button");
         const left_arrow = document.createElement("img");
@@ -32,37 +33,40 @@ class GalleryElement extends HTMLElement {
                 width: 100%;
             }
 
-            .left-button {
+            .button-container {
+                z-index: 2;
                 position: absolute; /* set button to an absolute position */
-                top: 50%; /* adjust the top position of the button */
-                left: 0%; /* adjust the left position of the button */
-                transform: translate(0%, -50%); /* center the button */
-                z-index: 2; /* set a higher z-index than the image */
-                color: #fff; /* set your desired text color */
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+            }
+
+            .left-button {
                 cursor: pointer; /* change mouse cursor on hover */
             }
 
             .right-button {
-                position: absolute; /* set button to an absolute position */
-                top: 50%; /* adjust the top position of the button */
-                left: 100%; /* adjust the left position of the button */
-                transform: translate(-100%, -50%); /* center the button */
-                z-index: 2; /* set a higher z-index than the image */
-                color: #fff; /* set your desired text color */
                 cursor: pointer; /* change mouse cursor on hover */
             }
         `
 
         shadow.appendChild(container);
+        shadow.appendChild(style);
         container.appendChild(img);
-        container.appendChild(style);
-        container.appendChild(button_left);
-        container.appendChild(button_right);
+        container.appendChild(button_container)
+        button_container.appendChild(button_left);
+        button_container.appendChild(button_right);
         shadow.appendChild(caption_box);
         button_left.appendChild(left_arrow);
         button_right.appendChild(right_arrow);
 
         container.classList = "container"
+        button_container.classList = "button-container"
         button_left.classList = "left-button"
         button_right.classList = "right-button"
 

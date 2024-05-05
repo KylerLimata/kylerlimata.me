@@ -120,6 +120,7 @@ image-gallery::part(button) {
     font-weight: 700;
     border: none;
     background-color: var(--dark-background);
+    margin: 8px;
 }
 image-gallery::part(button):hover {
     background-color: var(--accent-color);
