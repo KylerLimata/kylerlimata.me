@@ -64,6 +64,11 @@ class GalleryElement extends HTMLElement {
         button_right.textContent = ">"
         button_right.classList = "right-button"
 
+        img.part = "img";
+        button_left.part = "button-left";
+        button_right.part = "button-right";
+        caption_box.part = "caption";
+
         fetch(this.getAttribute("src"))
             .then(res => res.json())
             .then(val => {
