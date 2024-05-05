@@ -69,11 +69,15 @@ class GalleryElement extends HTMLElement {
         button_right.part = "button-right";
         caption_box.part = "caption";
 
+        button_left.title = "Previous Image";
+        button_right.title = "Next Image"
+
         fetch(this.getAttribute("src"))
             .then(res => res.json())
             .then(val => {
                 const data = val[0]
                 img.src = data.src;
+                img.alt = data.caption;
                 caption_box.textContent = data.caption;
                 gallery.json = val
             });
