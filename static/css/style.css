@@ -121,6 +121,9 @@ image-gallery::part(button) {
     border: none;
     background-color: var(--dark-background);
 }
+image-gallery::part(button):hover {
+    background-color: var(--accent-color);
+}
 image-gallery::part(arrow) {
     width: 16px;
     height: 16px;
