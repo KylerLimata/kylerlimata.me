@@ -3,7 +3,9 @@
         {{ body }}
     </div>
     <div class="five columns">
-        <image-gallery src="{{ src }}"></image-gallery>
+        {%- set left_arrow_src = get_url(path="images/gallery/left-arrow.svg") -%}
+        {%- set right_arrow_src = get_url(path="images/gallery/right-arrow.svg") -%}
+        <image-gallery src="{{ src }}" left-arrow-src="{{ left_arrow_src }}" right-arrow-src="{{ right_arrow_src }}"></image-gallery>
     </div>
     
 </div>

@@ -18,6 +18,8 @@ class GalleryElement extends HTMLElement {
         const img = this.img
         const button_left = document.createElement("button");
         const button_right = document.createElement("button");
+        const left_arrow = document.createElement("img");
+        const right_arrow = document.createElement("img");
         const caption_box = this.caption_box;
 
         style.textContent = `
@@ -56,18 +58,23 @@ class GalleryElement extends HTMLElement {
         container.appendChild(style);
         container.appendChild(button_left);
         container.appendChild(button_right);
-        shadow.appendChild(caption_box)
+        shadow.appendChild(caption_box);
+        button_left.appendChild(left_arrow);
+        button_right.appendChild(right_arrow);
 
         container.classList = "container"
         button_left.classList = "left-button"
-        button_left.textContent = "<"
-        button_right.textContent = ">"
         button_right.classList = "right-button"
 
         img.part = "img";
-        button_left.part = "button-left";
-        button_right.part = "button-right";
+        button_left.part = "button";
+        button_right.part = "button";
         caption_box.part = "caption";
+        left_arrow.part = "arrow";
+        right_arrow.part = "arrow";
+
+        left_arrow.src = this.getAttribute("left-arrow-src");
+        right_arrow.src = this.getAttribute("right-arrow-src");
 
         button_left.title = "Previous Image";
         button_right.title = "Next Image"
