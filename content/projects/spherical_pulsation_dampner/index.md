@@ -18,7 +18,9 @@ One of my responsibilities was creating the CAD model for the prototype. After i
 {% end %}
 
 ## CAD Drafting
+{% gallery(src="drawing_gallery.json") %}
 I was also responsible for converting the CAD model into the drawings seen here. These drawings follow the general dimensioning guidelines and are created, including the appropriate symbols for holes, radii, and diameters.
+{% end %}
 
 ## ANSYS Simulation
 
