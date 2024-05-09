@@ -104,9 +104,6 @@ sidebar {
 }
 
 /* Gallery */
-image-gallery::part(img) {
-    border-radius: 16px;
-}
 image-gallery::part(caption) {
     text-align: center;
     color: #444;
