@@ -109,8 +109,10 @@ image-gallery::part(caption) {
     color: #444;
     font-style: italic;
 }
-image-gallery::part(foo) {
-    opacity: 0;
+@media (any-hover: hover) {
+    image-gallery::part(foo) {
+        opacity: 0;
+    }
 }
 image-gallery::part(foo):hover {
     opacity: 1;
