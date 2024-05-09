@@ -71,6 +71,7 @@ class GalleryElement extends HTMLElement {
         button_right.classList = "right-button"
 
         img.part = "img";
+        button_container.part = "foo"
         button_left.part = "button";
         button_right.part = "button";
         caption_box.part = "caption";
