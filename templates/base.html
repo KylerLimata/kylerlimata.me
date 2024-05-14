@@ -37,45 +37,50 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <sidebar>
-    <img src={{ get_url(path="images/pfp.jpg") }} class="profile-picture circle">
-    <div class="title">
-      Kyler Limata
+  <header class="row">
+    <div class="container">
+      <div class="title">
+        Kyler Limata
+      </div>
+      <div class="nav-links">
+        {%- set nav_data = load_data(path="navigation.json") -%}
+        {%- for nav in nav_data -%}
+          {%- set nav_url = get_url(path=nav.path) -%}
+          {%- set title = nav.title -%}
+          {%- set classes = "nav-link" -%}
+    
+          {%- if section and title == section.title -%}
+            {%- set classes = "nav-link current" -%}
+          {%- endif -%}
+    
+          <div class="nav-link-box">
+            <a href="{{ nav_url }}" class="{{ classes }}">{{ nav.title }}</a>
+          </div>
+        {%- endfor -%}
+      </div>
     </div>
-    <div class="nav-links">
-      {%- set nav_data = load_data(path="navigation.json") -%}
-      {%- for nav in nav_data -%}
-        {%- set nav_url = get_url(path=nav.path) -%}
-        {%- set title = nav.title -%}
-        {%- set classes = "nav-link" -%}
-  
-        {%- if section and title == section.title -%}
-          {%- set classes = "nav-link current" -%}
-        {%- endif -%}
-  
-        <div class="nav-link-box">
-          <a href="{{ nav_url }}" class="{{ classes }}">{{ nav["title"] }}</a>
-        </div>
-      {%- endfor -%}
-    </div>
-    <div class="socials-box">
-      {%- set social_data = load_data(path="socials.json") -%}
-      {%- for social in social_data -%}
-        {%- set icon_url = get_url(path="images/socials/" ~ social.icon) -%}
-        <a href="{{ social.url }}" class="social-link">
-          <img src="{{ icon_url }}" style="width: 32px;">
-        </a>
-      {%- endfor -%}
-    </div>
-    <div class="copyright-box">
-      Copyright &copy; 2024 Kyler Limata
-    </div>
-  </sidebar>
-  <div class="main">
+  </header>
+  <div class="row content">
     <div class="container">
       {% block content %}{% endblock content %}
     </div>
   </div>
+  <footer class="row">
+    <div style="margin-left: auto;margin-right: auto;width: fit-content;">
+      <div class="socials-box">
+        {%- set social_data = load_data(path="socials.json") -%}
+        {%- for social in social_data -%}
+          {%- set icon_url = get_url(path="images/socials/" ~ social.icon) -%}
+          <a href="{{ social.url }}" class="social-link">
+            <img src="{{ icon_url }}" style="width: 32px;">
+          </a>
+        {%- endfor -%}
+      </div>
+      <div class="copyright-box">
+        Copyright &copy; 2024 Kyler Limata
+      </div>
+    </div>
+  </footer>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
