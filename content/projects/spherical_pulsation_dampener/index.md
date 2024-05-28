@@ -24,7 +24,9 @@ I was also responsible for converting the CAD model into the drawings seen here.
 
 ## ANSYS Simulation
 
-My other major responsibility was simulating the assembly in ANSYS so that we could evaluate whether our design would hold up in testing conditions. To run the simulation, I fed a negative of the assembly model into ANSYS Fluent, which provided pressure data for a static structural simulation (assuming steady-state conditions). 
+{% gallery(src="ansys_gallery.json") %}
+My other major responsibility was simulating the assembly in ANSYS so that we could evaluate whether our design would hold up in testing conditions. To run the simulation, I fed a negative of the assembly model into ANSYS Fluent, which provided pressure data for a static structural simulation (assuming steady-state conditions).
+{% end %} 
 
 # Testing and Results
 ------
