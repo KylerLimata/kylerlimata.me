@@ -22,7 +22,11 @@ body {
 header {
     background-color: var(--dark-background);
     color: var(--light-text);
-    box-shadow: 0px 25px 20px 7px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 5px 12px -1px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 5px 12px -1px rgba(0,0,0,0.48);
+    box-shadow: 0px 5px 12px -1px rgba(0,0,0,0.48);
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .profile-picture {
@@ -36,14 +40,22 @@ header {
     border-radius: 50%;
     width: 48px;
     height: 48px;
+    margin-left: 0;
+    margin-right: 16px;
+    margin-bottom: 0;
 }
 .title {
     font-size: large;
     font-weight: 700;
-    float: left;
-    width: fit-content;
-    margin-top: 8px;
     height: fit-content;
+    white-space: nowrap;
+}
+
+.site-info {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    float: left;
 }
 
 /* Navigation */
@@ -53,26 +65,26 @@ header {
     text-decoration: none;
     text-align: center;
     width: fit-content;
-    font-size: 2rem;
+    font-size: large;
     color: var(--light-text);
-    border-bottom: 4px solid var(--light-text);
     padding-left: 8px;
     padding-right: 8px;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 .nav-link:hover {
     color: var(--accent-color);
-    border-bottom-color: var(--accent-color);
+    background-color: #dedede;
 }
 .nav-link.current {
     color: var(--accent-color);
-    border-bottom-color: var(--accent-color);
-}
-.nav-link-box {
-    border-left: 1px solid black;
-    float: right;
+
 }
 .nav-links {
-    border-right: 1px solid black;
+    display: flex;
+    flex-direction: row;
     float: right;
 }
 
@@ -161,8 +173,7 @@ footer {
 /* Larger than desktop */
 @media (min-width: 1000px) {
     .nav-link {
-        font-size: 2.6rem;
-        border-bottom: 4px solid var(--light-text);
+        font-size: x-large
     }
     .title {
         font-size: x-large;
@@ -172,8 +183,7 @@ footer {
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
     .nav-link {
-        font-size: 4rem;
-        border-bottom: 8px solid var(--light-text);
+        font-size: xx-large
     }
     .title {
         text-align: center;
