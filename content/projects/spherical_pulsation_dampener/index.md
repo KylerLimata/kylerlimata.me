@@ -41,4 +41,7 @@ In order to record data, I also wrote a command line program for the Raspberry P
 {% end %}
 
 ## Results
+
+{% gallery(src="trials_gallery.json") %}
 The results of our experiments can be seen here; while the damping effect was not as much as initially expected, the actual damping effect is clearly demonstrated.
+{% end %}
