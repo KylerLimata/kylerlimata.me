@@ -1,8 +1,13 @@
-<div {% if class %}class="{{class}}"{% endif %}>
-    <iframe
-        src="https://www.youtube.com/embed/{{id}}{% if autoplay %}?autoplay=1{% endif %}"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen>
-    </iframe>
+<div class="row">
+    <div class="seven columns">
+        {{ body }}
+    </div>
+    <div class="five columns">
+        <iframe
+            src="https://www.youtube.com/embed/{{id}}{% if autoplay %}?autoplay=1{% endif %}"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen>
+        </iframe>
+    </div>
 </div>

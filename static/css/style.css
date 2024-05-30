@@ -94,6 +94,7 @@ header {
 }
 
 /* Gallery */
+.caption,
 image-gallery::part(caption) {
     text-align: center;
     color: #444;

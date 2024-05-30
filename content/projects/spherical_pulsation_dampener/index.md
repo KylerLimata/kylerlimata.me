@@ -31,13 +31,14 @@ My other major responsibility was simulating the assembly in ANSYS so that we co
 # Testing and Results
 ------
 ## Development of Testing Apparatus
+
+{% youtube(id="j80AP9xh_D0") %}
 To test the prototype, we used a cheap aquarium pump and pressure sensors as close to the inlet and outlet as possible. These pressure sensors had a range of 0 to 10 psi, or 0 to 64 kPa. With an input of 5v, the pressure range would translate to an output of 0.5v to 4.5v, but the output range would decrease to match a lower input voltage.
+{% end %}
 
-{{ youtube(id="j80AP9xh_D0") }}
-
+{% image_with_text(src="raspberrypi.jpg",caption="Raspberry Pi Setup") %}
 In order to record data, I also wrote a command line program for the Raspberry Pi Zero W that would interface with an ADS1115 Analog to Digital converter. This program would record data for a specified amount of seconds and a specified time interval. It would then output a graph for immediate viewing and an Excel file containing the recorded data. The setup for the raspberry pi is shown on the right and the code for the command line program can be found here.
-
-![Raspberry Pi Setup](raspberrypi.jpg)
+{% end %}
 
 ## Results
 The results of our experiments can be seen here; while the damping effect was not as much as initially expected, the actual damping effect is clearly demonstrated.
