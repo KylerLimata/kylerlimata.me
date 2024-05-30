@@ -181,6 +181,16 @@ footer {
     .nav-link {
         font-size: x-large;
     }
+
+    .position-info {
+        float: left;
+        width: 60%;
+    }
+    .position-duration {
+        float: right;
+        text-align: right;
+        width: 40%;
+    }
 }
 
 /* Larger than tablet */
