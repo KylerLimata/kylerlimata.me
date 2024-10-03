@@ -1,6 +1,6 @@
 <div class="row">
     <div class="position-info">
-        <strong>{{ title }}</strong> - {{ company }}
+        <strong>{{ title }}</strong>{% if company %} - {{ company }} {% endif %}
     </div>
     <div class="position-duration">
         {{ duration }}

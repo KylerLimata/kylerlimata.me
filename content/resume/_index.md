@@ -5,30 +5,22 @@ template="resume.html"
 
 # Projects
 ------
-{{ position(title="Motion Simulation of 2-Link Robot Arm",company="Saint Martin's University",duration="November 2023 - December 2023") }}
-- Collaborated with partner to mathematically model a 2-Link, 2D robot arm
-- Derived the equations of motion using Kane's method and AutoLev
-- Simulated arm in MATLAB
+{{ position(title="Motion Simulation of 2-Link Robot Arm",duration="November 2023 - December 2023") }}
+- Derived equations of motion using Kane’s method and developed a MATLAB simulation script using AutoLev
+- Demonstrated 4 combinations of torque at each joint to achieve high-speed motion of the arm
 
-{{ position(title="Vibration Simulation of 3D Printer",company="Saint Martin's University",duration="September 2023 - October 2023") }}
-- Collaborated with partner to develop to model the vibration of a 3D printer
-- Developed simplified system model and developed the equations of motion
-- Used MATLAB to simulate the simplified system
+{{ position(title="Vibration Simulation of 3D Printer",duration="September 2023 - October 2023") }}
+- Analyzed the structure of a gantry 3D printer and broke it down into 3 independent vibration models
+- Simulated 3D printer structure using MATLAB to demonstrate the vibration characteristics of the model
 
-{{ position(title="Electric Car Machine Learning",company="Saint Martin's University",duration="July - August 2023") }}
-- Co-led team of four to develop Q-Learning training script in python for cruise control in a simple electric car simulation
-- Independently developed specialized Q-Table class capable of discretizing state and action inputs
-- Ran training simulations and adjusted the meta parameters
+{{ position(title="Electric Car Machine Learning",duration="July - August 2023") }}
+- Co-led team of 4 to train a lookup table controller using python and Q-learning for a simple car simulation
+- Optimized hyperparameters to achieve a medium level of stability in controller response
 
-{{ position(title="Rack and Pinion Finite Element Simulation",company="Saint Martin's University",duration="Januart - April 2023") }}
-- foo
-- bar
-
-{{ position(title="Spherical Fluid Pulsation Dampener (Capstone Project)",company="Saint Martin's University",duration="September 2021 - April 2022") }}
-- Collaborated with partner to develop and test prototype spherical fluid pulations dampener using prior research
-- Developed 3D CAD models of housing, distributor plate, and receiver plate parts in Autodesk Inventor
-- Created 2D CAD drawings with General Dimensioning in Autodesk Inventor
-- Simulated fluid dynamics and structural stress of design in ANSYS Fluent
+{{ position(title="Spherical Fluid Pulsation Dampener",duration="September 2021 - April 2022") }}
+- Produced a prototype Spherical Fluid Pulsation Dampener based on prior research that reduced output pressure by 50% and fluid pulsations by 99% with zero moving parts
+- Analyzed both structural stress and the fluid dynamics of the model in ANSYS, ensuring the desired fluid damping effect and structural stability
+- Remodeled housing, distributor plate, and receiver plate in Autodesk Inventor to align with testing needs and capabilities
 - Utilized mechatronics knowledge to develop Raspberry Pi program to interface with pressure sensors via ADC
 
 {{ position(title="Firefly Optimization Algorithm",company="Saint Martin's University",duration="April 2022") }}
@@ -42,7 +34,7 @@ template="resume.html"
 
 # Work Experience
 ------
-{{ position(title="Waitstaff",company="Patriots Landing Operations LLC",duration="Febuary 2024 - Present") }}
+{{ position(title="Waitstaff",company="Patriots Landing Retirement Community",duration="Febuary 2024 - Present") }}
 - Waits on and cleans up multiple tables in an open dining hall, including assiting other servers with their tables when necessary
 - Assists in setup and cleanup tasks in both the dining room and kitchen
 
