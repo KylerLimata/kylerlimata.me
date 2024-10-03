@@ -11,7 +11,7 @@ My engineering journey started when I was young. From an early age, I was fascin
 
 After High School, I went to Saint Martin's University to study Mechanical Engineering. In 2022, I graduated with my Bachelor's degree and returned to Saint Martin's in 2023 to work on my Master in Mechanical Engineering.
 
-I am currently looking for a role where I can exercise my problem-solving skills and continue to grow and challenge myself as a Mechanical Engineer. While my primary interest is robotics, I am open to any mechatronics, design, or CAD roles.
+I am currently looking for a role where I can exercise my problem-solving skills and continue to grow and challenge myself as a Mechanical Engineer. My primary areas of interest are Control Systems, Mechatronics, and Robotics, though I am open to anything.
 
 ------
 
