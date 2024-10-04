@@ -1,0 +1,221 @@
+:root {
+    --sidebar-size: 16%;
+    --dark-text: #111;
+    --light-text: #dedede;
+    --accent-color: #00919e;
+
+    --dark-background: #262424;
+    --light-text-filter: invert(97%) sepia(7%) saturate(17%) hue-rotate(118deg) brightness(106%) contrast(74%);
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #f0f1f2;
+}
+
+header {
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    -webkit-box-shadow: 0px 5px 12px -1px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 5px 12px -1px rgba(0,0,0,0.48);
+    box-shadow: 0px 5px 12px -1px rgba(0,0,0,0.48);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.profile-picture {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+.profile-picture.circle {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-left: 0;
+    margin-right: 16px;
+    margin-bottom: 0;
+}
+.title {
+    font-size: x-large;
+    font-weight: 700;
+    height: fit-content;
+    white-space: nowrap;
+    display: none;
+}
+
+.site-info {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+/* Navigation */
+.nav-link {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    font-size: large;
+    color: var(--light-text);
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.nav-link:hover {
+    color: var(--accent-color);
+    background-color: #dedede;
+}
+.nav-link.current {
+    color: var(--accent-color);
+
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+/* Content */
+.content {
+    flex-grow: 1;
+}
+
+/* Gallery */
+.caption,
+image-gallery::part(caption) {
+    text-align: center;
+    color: #444;
+    font-style: italic;
+}
+@media (any-hover: hover) {
+    image-gallery::part(foo) {
+        opacity: 0;
+    }
+}
+image-gallery::part(foo):hover {
+    opacity: 1;
+}
+image-gallery::part(button) {
+    padding: 0%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-weight: 700;
+    border: none;
+    background-color: var(--dark-background);
+    margin: 8px;
+}
+image-gallery::part(button):hover {
+    background-color: var(--accent-color);
+}
+image-gallery::part(arrow) {
+    width: 16px;
+    height: 16px;
+    filter: var(--light-text-filter);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-background);
+    min-height: 42px;
+    padding-top: 4px;
+    flex-shrink: 0;
+    margin-top: 5%;
+}
+
+.copyright-box {
+    text-align: center;
+    color: var(--light-text);
+    font-weight: 600;
+    font-size: large;
+    margin-right: 16px;
+    margin-top: 4px;
+    padding-top: 4px;
+    margin-bottom: 8px;
+    border-top: 2px solid var(--light-text);
+}
+
+/* Socials */
+.socials-box {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2px;
+    margin-top: 8px;
+}
+.social-link {
+    display: block;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    .profile-picture.circle {
+        width: 48px;
+        height: 48px;
+    }
+
+    .title {
+        display: block;
+    }
+
+    .nav-link {
+        font-size: x-large;
+    }
+
+    .position-info {
+        float: left;
+        width: 60%;
+    }
+    .position-duration {
+        float: right;
+        text-align: right;
+        width: 40%;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    .nav-link {
+        font-size: x-large
+    }
+    .title {
+        font-size: x-large;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    .nav-link {
+        font-size: xx-large
+    }
+    .title {
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 700;
+    }
+}

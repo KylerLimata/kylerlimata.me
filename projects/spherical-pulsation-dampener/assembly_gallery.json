@@ -1,0 +1,26 @@
+[
+    {
+        "src": "AssemblyCrossSection.png",
+        "caption": "Assembly cross section"
+    },
+    {
+        "src": "DampenerAssembly.png",
+        "caption": "Damper assembly from outside"
+    },
+    {
+        "src": "Housing.png",
+        "caption": "Dampener housing half"
+    },
+    {
+        "src": "Housing Cross Section.png",
+        "caption": "Dampener housing cross section"
+    },
+    {
+        "src": "DistributorPlate.png",
+        "caption": "Dampener distributor plate"
+    },
+    {
+        "src": "ReceiverPlateCrossSection.png",
+        "caption": "Dampener receiver plate cross section"
+    }
+]
