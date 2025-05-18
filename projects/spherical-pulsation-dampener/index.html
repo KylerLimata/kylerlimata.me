@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>
+Projects - Spherical Pulsation Dampener
+</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://kylerlimata.me/css/normalize.css">
+  <link rel="stylesheet" href="https://kylerlimata.me/css/skeleton.css">
+  <link rel="stylesheet" href="https://kylerlimata.me/css/style.css">
+
+  <!-- Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="https://kylerlimata.me/main.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header class="row">
+    <div class="container">
+      <div class="site-info">
+        <img class="profile-picture circle" src="https://kylerlimata.me/images/pfp.jpg" />
+        <div class="title">
+          Kyler Limata
+        </div>
+      </div>
+      <div class="nav-links"><div class="nav-link-box">
+            <a href="https:&#x2F;&#x2F;kylerlimata.me&#x2F;about" class="nav-link">About</a>
+          </div><div class="nav-link-box">
+            <a href="https:&#x2F;&#x2F;kylerlimata.me&#x2F;projects" class="nav-link">Projects</a>
+          </div></div>
+    </div>
+  </header>
+  <div class="row content">
+    <div class="container">
+      
+    <div style="margin-top: 5%;">
+        <h1 id="overview">Overview</h1>
+<hr />
+<p>For my senior design/capstone project, I worked with a partner to create a prototype Spherical Fluid Pulsation Dampener. In industries such as oil and nuclear, the heavy-duty pumps used will create fluid pulsations that can damage equipment downstream. A pulsation dampener is meant to prevent such damage by converting these pulsations to a steady flow. However, these dampeners rely on moving parts that require maintenance over their lifetime. A spherical pulsation dampener, on the other hand, uses internal distributor and receiver plates to passively create a damping effect, eliminating the need for periodic maintainance. We developed, 3D printed, and tested the prototype based on prior research.</p>
+<h1 id="prototype-creation">Prototype Creation</h1>
+<hr />
+<h2 id="cad-modelling">CAD Modelling</h2>
+<div class="row">
+    <div class="seven columns">
+        One of my responsibilities was creating the CAD model for the prototype. After iterating on the design, we settled on an assembly consisting of four different parts: two housing components with built-in pipes and separate receiver and distributor plates. The plates are only shown separately for presentation purposes as they were each 3D printed with half of the housing.
+    </div>
+    <div class="five columns"><image-gallery src="assembly_gallery.json" left-arrow-src="https:&#x2F;&#x2F;kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;left-arrow.svg" right-arrow-src="https:&#x2F;&#x2F;kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;right-arrow.svg"></image-gallery>
+    </div>
+    
+</div><h2 id="cad-drafting">CAD Drafting</h2>
+<div class="row">
+    <div class="seven columns">
+        I was also responsible for converting the CAD model into the drawings seen here. These drawings follow the general dimensioning guidelines and are created, including the appropriate symbols for holes, radii, and diameters.
+    </div>
+    <div class="five columns"><image-gallery src="drawing_gallery.json" left-arrow-src="https:&#x2F;&#x2F;kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;left-arrow.svg" right-arrow-src="https:&#x2F;&#x2F;kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;right-arrow.svg"></image-gallery>
+    </div>
+    
+</div><h2 id="ansys-simulation">ANSYS Simulation</h2>
+<div class="row">
+    <div class="seven columns">
+        My other major responsibility was simulating the assembly in ANSYS so that we could evaluate whether our design would hold up in testing conditions. To run the simulation, I fed a negative of the assembly model into ANSYS Fluent, which provided pressure data for a static structural simulation (assuming steady-state conditions).
+    </div>
+    <div class="five columns"><image-gallery src="ansys_gallery.json" left-arrow-src="https:&#x2F;&#x2F;kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;left-arrow.svg" right-arrow-src="https:&#x2F;&#x2F;kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;right-arrow.svg"></image-gallery>
+    </div>
+    
+</div> <h1 id="testing-and-results">Testing and Results</h1>
+<hr />
+<h2 id="development-of-testing-apparatus">Development of Testing Apparatus</h2>
+<div class="row">
+    <div class="seven columns">
+        To test the prototype, we used a cheap aquarium pump and pressure sensors as close to the inlet and outlet as possible. These pressure sensors had a range of 0 to 10 psi, or 0 to 64 kPa. With an input of 5v, the pressure range would translate to an output of 0.5v to 4.5v, but the output range would decrease to match a lower input voltage.
+    </div>
+    <div class="five columns">
+        <iframe
+            src="https://www.youtube.com/embed/j80AP9xh_D0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen>
+        </iframe>
+    </div>
+</div><div class="row">
+    <div class="seven columns">
+        In order to record data, I also wrote a command line program for the Raspberry Pi Zero W that would interface with an ADS1115 Analog to Digital converter. This program would record data for a specified amount of seconds and a specified time interval. It would then output a graph for immediate viewing and an Excel file containing the recorded data. The setup for the raspberry pi is shown on the right and the code for the command line program can be found here.
+    </div>
+    <div class="five columns">
+        <img src="raspberrypi.jpg" style="width: 100%;" />
+        <div class="caption">
+            Raspberry Pi Setup
+        </div>
+    </div>
+</div><h2 id="results">Results</h2>
+<div class="row">
+    <div class="seven columns">
+        The results of our experiments can be seen here; while the damping effect was not as much as initially expected, the actual damping effect is clearly demonstrated.
+    </div>
+    <div class="five columns"><image-gallery src="trials_gallery.json" left-arrow-src="https:&#x2F;&#x2F;kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;left-arrow.svg" right-arrow-src="https:&#x2F;&#x2F;kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;right-arrow.svg"></image-gallery>
+    </div>
+    
+</div>
+    </div>
+
+    </div>
+  </div>
+  <footer class="row">
+    <div style="margin-left: auto;margin-right: auto;width: fit-content;">
+      <div class="socials-box"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;kyler-limata-7a89a4237&#x2F;" class="social-link">
+            <img src="https:&#x2F;&#x2F;kylerlimata.me&#x2F;images&#x2F;socials&#x2F;LinkedIn_icon.svg" style="width: 32px;">
+          </a><a href="https:&#x2F;&#x2F;github.com&#x2F;KylerLimata" class="social-link">
+            <img src="https:&#x2F;&#x2F;kylerlimata.me&#x2F;images&#x2F;socials&#x2F;github-mark-white.svg" style="width: 32px;">
+          </a></div>
+      <div class="copyright-box">
+        Copyright &copy; 2024 Kyler Limata
+      </div>
+    </div>
+  </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

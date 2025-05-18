@@ -1,0 +1,14 @@
+[
+    {
+        "src": "velocity_streamline_260gph.png",
+        "caption": "Velocities streamlines inside dampner"
+    },
+    {
+        "src": "pressure_contour_side_260gph.png",
+        "caption": "Pressure contour in dampener cross section"
+    },
+    {
+        "src": "ansys setup.png",
+        "caption": "Setup of ANSYS project"
+    }
+]

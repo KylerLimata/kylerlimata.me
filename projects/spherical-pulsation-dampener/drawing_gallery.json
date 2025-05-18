@@ -1,0 +1,18 @@
+[
+    {
+        "src": "HousingDrawing.png",
+        "caption": "2D CAD drawing of the housing half"
+    },
+    {
+        "src": "DistributorPlateDrawing.png",
+        "caption": "2D CAD drawing of the distributor plate"
+    },
+    {
+        "src": "RecieverPlateDrawing.png",
+        "caption": "2D CAD drawing of the receiver plate"
+    },
+    {
+        "src": "DampenerAssemblyDrawing.png",
+        "caption": "2D CAD drawing of the entire assembly"
+    }
+]
