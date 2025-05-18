@@ -1,6 +1,7 @@
 +++
 title="Resume"
 template="resume.html"
+draft=true
 +++
 
 # Projects
