@@ -193,9 +193,17 @@ footer {
     }
 }
 
+@media (max-width: 749px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
-
+    .mobile-only {
+        display: none;
+    }
 }
 
 /* Larger than desktop */

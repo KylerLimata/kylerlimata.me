@@ -1,7 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div style="margin-top: 5%">
+<div style="margin-top: 5%" class="mobile-only">
+  <img class="profile-picture", style="width: 40%; margin-left: auto; margin-right: auto; display: block;" src="{{ get_url(path="images/pfp.jpg") }}">
+  <div style="text-align: center;">
+      <h5>Contact Info:</h5>
+      <strong>email:</strong>
+      <a href="mailto: kyler.limata@gmail.com">kyler.limata@gmail.com</a><br/>
+      <strong>phone:</strong> 253-324-8867<br/>
+      <strong>linkedin:</strong>
+      <a href="https://www.linkedin.com/in/kyler-limata">linkedin.com/in/kyler-limata</a>
+    </div>
+    <hr>
+    {{ section.content | safe }}
+</div>
+<div style="margin-top: 5%" class="hide-on-mobile">
   <div class="one-half column">
     {{ section.content | safe }}
   </div>
