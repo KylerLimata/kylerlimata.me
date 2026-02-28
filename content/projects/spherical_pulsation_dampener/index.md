@@ -1,5 +1,6 @@
 +++
 title = "Spherical Pulsation Dampener"
+date = 2022-04-30
 extra.summary = "For my Capstone Project, I collaborated with a partner to develop a spherical fluid pulsation dampener, which dampens fluid pulsations by creating a vortex internally."
 +++
 
