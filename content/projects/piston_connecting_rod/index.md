@@ -14,7 +14,10 @@ You can read the full project report [here](MME540_KylerLimata_GradProjectReport
 # Design and Stress Analysis
 ------
 
-
+{% image_with_text_small(src="diagram.png",caption="The four stress locations") %}
+As shown in the diagram, four different stress locations were selected for analysis:<br\>
+1. Location 1
+{% end %}
 
 # FEA Simulation
 ------
