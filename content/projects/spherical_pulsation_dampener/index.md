@@ -26,7 +26,11 @@ I was also responsible for converting the CAD model into the drawings seen here.
 ## ANSYS Simulation
 
 {% gallery(src="ansys_gallery.json") %}
-My other major responsibility was simulating the assembly in ANSYS so that we could evaluate whether our design would hold up in testing conditions. To run the simulation, I fed a negative of the assembly model into ANSYS Fluent, which provided pressure data for a static structural simulation (assuming steady-state conditions).
+
+From the assembly model, I was able to subtractively model the internal geometry in Inventor, which was required for simulating the internal fluid dynamics in ANSYS. This simulation was performed in ANSYS fluent, which provided a look at the fluid velocity streamlines. Not only was the expected vortex clearly demonstrated, but fluid velocity rapidly slowed as it left the nozzles of the distributor plate, only speeding back up in the receiver plate, indicative of the desired dampening effect.<br><br>
+
+Fluent also provided fluid pressure data which was fed into ANSYS structural, allowing us to verify that the dampener was structurally stable under the fluid loading conditions.
+
 {% end %} 
 
 # Testing and Results
@@ -38,7 +42,7 @@ To test the prototype, we used a cheap aquarium pump and pressure sensors as clo
 {% end %}
 
 {% image_with_text(src="raspberrypi.jpg",caption="Raspberry Pi Setup") %}
-In order to record data, I also wrote a command line program for the Raspberry Pi Zero W that would interface with an ADS1115 Analog to Digital converter. This program would record data for a specified amount of seconds and a specified time interval. It would then output a graph for immediate viewing and an Excel file containing the recorded data. The setup for the raspberry pi is shown on the right and the code for the command line program can be found on the [GitHub Repository](https://github.com/KylerLimata/pressure_recorder).
+In order to record data, I also wrote a command line program for the Raspberry Pi Zero W that would interface with an ADS1115 Analog to Digital converter. This program would record data for a specified amount of seconds and a specified time interval. It would then output a graph for immediate viewing and an Excel file containing the recorded data. The setup for the raspberry pi is shown on the right and the code for the command line program can be found on the <a href="https://github.com/KylerLimata/pressure_recorder">GitHub Repository</a>.
 {% end %}
 
 ## Results
