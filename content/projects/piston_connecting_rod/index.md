@@ -15,8 +15,15 @@ You can read the full project report [here](MME540_KylerLimata_GradProjectReport
 ------
 
 {% image_with_text_small(src="diagram.png",caption="The four stress locations") %}
-As shown in the diagram, four different stress locations were selected for analysis:<br\>
-1. Location 1
+As shown in the diagram, four different stress locations were selected for analysis:
+1. Where the fillet between the big end and the base end
+2. Where the end of the web is filleted
+3. At the surface before the web of the "I-beam" section rounds out
+4. The ring where the connecting rod connects to the wrist pin
+\
+\
+For the purposes of stress analysis, point 1 could straightforwardly be treated as a bar with a shoulder fillet and point 4 as an infinite plate with a round hole; the latter assumption holds up surprisingly well despite not being entirely accurate. Point two was a little more complicated; it could be treated as another bar with a shoulder fillet, but that doesn't take into account the flanges. I eventually discovered the best simplification was indeed as a bar with a shoulder fillet and computing the stresses at the center of the rod, with the caveat that the stress had to be multiplied by the percentage of the web area out of the total cross-sectional area.
+Point 3 was the most interesting as I attempted to model it as a combined plate with hole and a solid cross section, with a stress concentration. However, I found that not introducing a stress concentration gave more accurate results.
 {% end %}
 
 # FEA Simulation
