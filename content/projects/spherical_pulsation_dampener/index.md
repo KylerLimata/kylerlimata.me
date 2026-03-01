@@ -7,7 +7,7 @@ extra.summary = "For my Capstone Project, I collaborated with a partner to desig
 # Overview
 ------
 
-For my senior design/capstone project, I worked with a partner to create a prototype Spherical Fluid Pulsation Dampener. In industries such as oil and nuclear, the heavy-duty pumps used will create fluid pulsations that can damage equipment downstream. A pulsation dampener is meant to prevent such damage by converting these pulsations to a steady flow. However, these dampeners rely on moving parts that require maintenance over their lifetime. A spherical pulsation dampener, on the other hand, uses internal distributor and receiver plates to passively create a damping effect, eliminating the need for periodic maintainance. We developed, 3D printed, and tested the prototype based on prior research.
+For my Capstone Project, I collaborated with a partner to design and prototype a spherical fluid pulsation dampener demonstrating a passive, no-moving-parts fluid dampening concept based on prior research. I was responsible for modeling the components and producing detailed 2D engineering drawings in Autodesk Inventor, applying GD&T standards to communicate the design. I extracted the internal fluid volume from the assembly for CFD analysis in ANSYS Fluent, where simulation results verified the vortex formation required for effective pulsation dampening. After evaluating machining and additive manufacturing options, we selected 3D printing to meet a $500 budget constraint. Performance was validated by designing and building a custom test apparatus using pressure transducers and a Raspberry Pi to measure inlet and outlet pressure response.
 
 # Prototype Creation
 ------
@@ -38,11 +38,11 @@ To test the prototype, we used a cheap aquarium pump and pressure sensors as clo
 {% end %}
 
 {% image_with_text(src="raspberrypi.jpg",caption="Raspberry Pi Setup") %}
-In order to record data, I also wrote a command line program for the Raspberry Pi Zero W that would interface with an ADS1115 Analog to Digital converter. This program would record data for a specified amount of seconds and a specified time interval. It would then output a graph for immediate viewing and an Excel file containing the recorded data. The setup for the raspberry pi is shown on the right and the code for the command line program can be found here.
+In order to record data, I also wrote a command line program for the Raspberry Pi Zero W that would interface with an ADS1115 Analog to Digital converter. This program would record data for a specified amount of seconds and a specified time interval. It would then output a graph for immediate viewing and an Excel file containing the recorded data. The setup for the raspberry pi is shown on the right and the code for the command line program can be found on the [GitHub Repository](https://github.com/KylerLimata/pressure_recorder).
 {% end %}
 
 ## Results
 
 {% gallery(src="trials_gallery.json") %}
-The results of our experiments can be seen here; while the damping effect was not as much as initially expected, the actual damping effect is clearly demonstrated.
+The results of our experiments can be seen here; while the damping effect was not as much as initially expected, the actual damping effect is clearly demonstrated. As the graphs show, the inlet pressure significantly and unpredicably fluctuates while outlet pressure is lower and almost perfectly smooth, at least in comparison to the inlet pressure.
 {% end %}
