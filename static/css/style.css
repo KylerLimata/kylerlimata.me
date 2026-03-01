@@ -101,14 +101,14 @@ image-gallery::part(caption) {
     color: #444;
     font-style: italic;
 }
-@media (any-hover: hover) {
+/* @media (any-hover: hover) {
     image-gallery::part(foo) {
         opacity: 0;
     }
 }
 image-gallery::part(foo):hover {
     opacity: 1;
-}
+} */
 image-gallery::part(button) {
     padding: 0%;
     border-radius: 50%;
