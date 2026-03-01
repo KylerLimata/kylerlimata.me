@@ -1,5 +1,5 @@
 +++
-title = "Robot Arm"
+title = "Robot Arm Modelling and Simulation"
 date = 2024-02-28
 extra.summary = "For a class on Modelling and Simulation, I worked with a partner to model and simulate a two-link, 2D robot arm with AutoLev and MATLAB. We later wrote and published a technical paper on this project, discussing how our work could inform the design of baseball-pitching robot arms in the ASME IMECE journal."
 +++
