@@ -26,6 +26,13 @@ For the purposes of stress analysis, point 1 could straightforwardly be treated 
 Point 3 was the most interesting as I attempted to model it as a combined plate with hole and a solid cross section, with a stress concentration. However, I found that not introducing a stress concentration gave more accurate results.
 {% end %}
 
+{% image_with_text_small(src="model.png",caption="Connecting rod model in Fusion 360") %}
+Having derived the stress equations, I was able to leverage python to perform all the kinematic, pressure, and stress calculations at 200 crankshaft angles over the compression and power stroke of the piston. This enabled quick iteration over the design parameters including fillet radii, the width and thickness of the web, the width and length of the main connecting rod body and the size of both the big end and the ring of the small end.
+\
+\
+Design parameters were selected based on what minimized the loading stresses at all four points and a fatigue analysis of the design was performed under cyclic loading conditions using the Soderberg criterion. These parameters were used to create a parametric model in Fusion 360 so that the geometry could be imported into ANSYS for structural finite element analysis.
+{% end %}
+
 # FEA Simulation
 ------
 
