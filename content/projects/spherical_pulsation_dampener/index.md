@@ -1,7 +1,7 @@
 +++
 title = "Spherical Pulsation Dampener"
 date = 2022-04-30
-extra.summary = "For my Capstone Project, I collaborated with a partner to develop a spherical fluid pulsation dampener, which dampens fluid pulsations by creating a vortex internally."
+extra.summary = "For my Capstone Project, I collaborated with a partner to design and prototype a spherical fluid pulsation dampener demonstrating a passive, no-moving-parts fluid dampening concept based on prior research. I was responsible for modeling the components and producing detailed 2D engineering drawings in Autodesk Inventor, applying GD&T standards to communicate the design. I extracted the internal fluid volume from the assembly for CFD analysis in ANSYS Fluent, where simulation results verified the vortex formation required for effective pulsation dampening. After evaluating machining and additive manufacturing options, we selected 3D printing to meet a $500 budget constraint. Performance was validated by designing and building a custom test apparatus using pressure transducers and a Raspberry Pi to measure inlet and outlet pressure response."
 +++
 
 # Overview
