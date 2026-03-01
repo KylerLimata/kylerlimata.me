@@ -7,8 +7,25 @@
     <div style="width: 90%;margin-left: 5%;">
         {% for page in paginator.pages %}
         <h3>{{ page.title }}</h3>
-        <p>{{ page.extra.summary | safe }}</p>
-        <a href="{{ page.permalink }}">Read more >>></a>
+        {% if page.extra.icon is defined %}
+            <div class="row">
+            <div class="four columns">
+                {# Build path: "folder/subfolder/icon.png" #}
+                {% set icon_path = page.components | concat(with=page.extra.icon) | join(sep="/") %}
+    
+                <img src="{{ icon_path }}" style="width: 100%;display: block;margin-left: auto;margin-right: auto;" alt="{{ page.title }} icon">
+            </div>
+            <div class="eight columns">
+                {{ page.extra.summary | safe }}
+                <br/>
+                <a href="{{ page.permalink }}">Read more >>></a>
+            </div>
+            </div>
+        {% else %}
+            <p>{{ page.extra.summary | safe }}</p>
+            <br/>
+            <a href="{{ page.permalink }}">Read more >>></a>
+        {% endif %}
         <hr>
         {% endfor %}
     </div>
