@@ -5,16 +5,12 @@ template="about_index.html"
 
 # About Me
 
-Recent graduate of Saint Martin's University with a Master of Science and also a graduate with a Bachelor of Science, both in Mechanical Engineering. Currently looking for a role where I can apply my knowledge and the skills I've learned to a challenging work environment where I can continue to grow and learn as an engineer.
+I am a recent graduate of Saint Martin's University with both a Master of Science and a Bachelor of Science in Mechanical Engineering. I am seeking a role where I can apply my technical skill set to meaningful challenges, contribute to impactful projects, and continue growing as an engineer.
 
-Aside from general mechanical engineering knowledge, my coursework and academic projects has allowed me to develop knowledge of modelling and simulation. Specifically, I've done Finite Element Analysis in ANSYS as part of my [capstone project](../projects/spherical-pulsation-dampener/) (a Spherical Fluid Pulsation Dampener), modelled and simulated a [2D robot arm](../projects/robot-arm/) using the AutoLev software package and MATLAB, and automated stress calculations in Python through modelling the loading cycle to design a [piston connecting rod](../projects/piston-connecting-rod/) for a class on internal combustion engines. I've also taken coursework in optimization algorithms - both linear and non-linear - with a focus on engineering problems.
+My academic project experience emphasizes modeling, simulation, and analytical problem-solving. I performed Finite Element Analysis (FEA) in ANSYS as part of my capstone project, [Spherical Fluid Pulsation Dampener](../projects/spherical-pulsation-dampener/), including both fluid and structural simulations. I also modeled and simulated a [2D robot arm](../projects/robot-arm/) using AutoLev and MATLAB, and automated stress calculations in Python by modeling the loading cycle of a [piston connecting rod](../projects/piston-connecting-rod/) for an internal combustion engines course. Additionally, I completed coursework in both linear and nonlinear optimization with a focus on engineering applications.
 
-As a potential candidate, my knowledge and skills enable me to automate repetitive design calculations and focus on making the important design decisions. In today's world, this is an important skill for working in a fast-paced environment where design requirements can be highly complex and prone to change.
+I am particularly interested in leveraging computational tools to automate repetitive design calculations, allowing more time to focus on critical engineering decisions. In fast-paced environments where requirements evolve, this approach enables rapid iteration and robust design outcomes.
 
-You can check out all my projects [here](../projects).
+Thank you for visiting my professional portfolio. If you believe my background aligns with your team’s needs, I would welcome the opportunity to connect via phone, email, or LinkedIn.
 
-Thank you for visiting my professional portfolio website. If your a recruiter and know of an opportunity that I might be interested in, please feel free to reach out to me by phone, email, or on LinkedIn.
-
-------
-
-Outside of engineering, I enjoy reading books, 3D printing, and spending time with my family, including taking walks and going on camping trips.
+Outside of engineering, I enjoy reading, 3D printing, board games, and spending time with my family—especially walking and camping.

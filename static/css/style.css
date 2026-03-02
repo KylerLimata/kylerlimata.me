@@ -44,6 +44,20 @@ header {
     margin-right: 16px;
     margin-bottom: 0;
 }
+.profile-box {
+  float: left;            /* Wraps text to the right */
+  width: 300px;           /* Adjust based on your image size */
+  margin: 0 20px 15px 0;  /* Spacing: top, right, bottom, left */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.profile-box img {
+  width: 100%;            /* Makes image fit the 250px box */
+  height: auto;
+  border-radius: 4px;
+}
 .title {
     font-size: x-large;
     font-weight: 700;
