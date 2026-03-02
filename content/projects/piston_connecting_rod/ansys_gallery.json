@@ -1,0 +1,18 @@
+[
+    {
+        "src": "normx.png",
+        "caption": "Connecting rod normal stresses in the x direction"
+    },
+    {
+        "src": "normy.png",
+        "caption": "Connecting rod normal stresses in the y direction"
+    },
+    {
+        "src": "principal.png",
+        "caption": "Principal stresses in the connecting rod"
+    },
+    {
+        "src": "shear.png",
+        "caption": "Shear stresses in the connecting rod"
+    }
+]

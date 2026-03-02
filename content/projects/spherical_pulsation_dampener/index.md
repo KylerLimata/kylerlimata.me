@@ -1,17 +1,19 @@
 +++
-title = "Spherical Pulsation Dampener"
-extra.summary = "For my Capstone Project, I collaborated with a partner to develop a spherical fluid pulsation dampener, which dampens fluid pulsations by creating a vortex internally."
+title = "Spherical Fluid Pulsation Dampener"
+date = 2022-04-30
+extra.summary = "For my Capstone Project, I collaborated with a partner to design and prototype a spherical fluid pulsation dampener demonstrating a passive, no-moving-parts fluid dampening concept based on prior research. I was responsible for modeling the components and producing detailed 2D engineering drawings in Autodesk Inventor, applying GD&T standards to communicate the design. I extracted the internal fluid volume from the assembly for CFD analysis in ANSYS Fluent, where simulation results verified the vortex formation required for effective pulsation dampening. After evaluating machining and additive manufacturing options, we selected 3D printing to meet a $500 budget constraint. Performance was validated by designing and building a custom test apparatus using pressure transducers and a Raspberry Pi to measure inlet and outlet pressure response."
+extra.icon="velocity_streamline_260gph.png"
 +++
 
 # Overview
 ------
 
-For my senior design/capstone project, I worked with a partner to create a prototype Spherical Fluid Pulsation Dampener. In industries such as oil and nuclear, the heavy-duty pumps used will create fluid pulsations that can damage equipment downstream. A pulsation dampener is meant to prevent such damage by converting these pulsations to a steady flow. However, these dampeners rely on moving parts that require maintenance over their lifetime. A spherical pulsation dampener, on the other hand, uses internal distributor and receiver plates to passively create a damping effect, eliminating the need for periodic maintainance. We developed, 3D printed, and tested the prototype based on prior research.
+For my Capstone Project, I collaborated with a partner to design and prototype a spherical fluid pulsation dampener demonstrating a passive, no-moving-parts fluid dampening concept based on prior research. I was responsible for modeling the components and producing detailed 2D engineering drawings in Autodesk Inventor, applying GD&T standards to communicate the design. I extracted the internal fluid volume from the assembly for CFD analysis in ANSYS Fluent, where simulation results verified the vortex formation required for effective pulsation dampening. After evaluating machining and additive manufacturing options, we selected 3D printing to meet a $500 budget constraint. Performance was validated by designing and building a custom test apparatus using pressure transducers and a Raspberry Pi to measure inlet and outlet pressure response.
 
 # Prototype Creation
 ------
 
-## CAD Modelling
+## CAD Modeling
 
 {% gallery(src="assembly_gallery.json") %}
 One of my responsibilities was creating the CAD model for the prototype. After iterating on the design, we settled on an assembly consisting of four different parts: two housing components with built-in pipes and separate receiver and distributor plates. The plates are only shown separately for presentation purposes as they were each 3D printed with half of the housing.
@@ -25,7 +27,11 @@ I was also responsible for converting the CAD model into the drawings seen here.
 ## ANSYS Simulation
 
 {% gallery(src="ansys_gallery.json") %}
-My other major responsibility was simulating the assembly in ANSYS so that we could evaluate whether our design would hold up in testing conditions. To run the simulation, I fed a negative of the assembly model into ANSYS Fluent, which provided pressure data for a static structural simulation (assuming steady-state conditions).
+
+From the assembly model, I was able to subtractively model the internal geometry in Inventor, which was required for simulating the internal fluid dynamics in ANSYS. This simulation was performed in ANSYS fluent, which provided a look at the fluid velocity streamlines. Not only was the expected vortex clearly demonstrated, but fluid velocity rapidly slowed as it left the nozzles of the distributor plate, only speeding back up in the receiver plate, indicative of the desired dampening effect.<br><br>
+
+Fluent also provided fluid pressure data which was fed into ANSYS structural, allowing us to verify that the dampener was structurally stable under the fluid loading conditions.
+
 {% end %} 
 
 # Testing and Results
@@ -37,11 +43,11 @@ To test the prototype, we used a cheap aquarium pump and pressure sensors as clo
 {% end %}
 
 {% image_with_text(src="raspberrypi.jpg",caption="Raspberry Pi Setup") %}
-In order to record data, I also wrote a command line program for the Raspberry Pi Zero W that would interface with an ADS1115 Analog to Digital converter. This program would record data for a specified amount of seconds and a specified time interval. It would then output a graph for immediate viewing and an Excel file containing the recorded data. The setup for the raspberry pi is shown on the right and the code for the command line program can be found here.
+In order to record data, I also wrote a command line program for the Raspberry Pi Zero W that would interface with an ADS1115 Analog to Digital converter. This program would record data for a specified amount of seconds and a specified time interval. It would then output a graph for immediate viewing and an Excel file containing the recorded data. The setup for the raspberry pi is shown on the right and the code for the command line program can be found on the <a href="https://github.com/KylerLimata/pressure_recorder">GitHub Repository</a>.
 {% end %}
 
 ## Results
 
 {% gallery(src="trials_gallery.json") %}
-The results of our experiments can be seen here; while the damping effect was not as much as initially expected, the actual damping effect is clearly demonstrated.
+The results of our experiments can be seen here; while the damping effect was not as much as initially expected, the actual damping effect is clearly demonstrated. As the graphs show, the inlet pressure significantly and unpredicably fluctuates while outlet pressure is lower and almost perfectly smooth, at least in comparison to the inlet pressure.
 {% end %}

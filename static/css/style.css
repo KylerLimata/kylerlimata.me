@@ -44,6 +44,20 @@ header {
     margin-right: 16px;
     margin-bottom: 0;
 }
+.profile-box {
+  float: left;            /* Wraps text to the right */
+  width: 300px;           /* Adjust based on your image size */
+  margin: 0 20px 15px 0;  /* Spacing: top, right, bottom, left */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.profile-box img {
+  width: 100%;            /* Makes image fit the 250px box */
+  height: auto;
+  border-radius: 4px;
+}
 .title {
     font-size: x-large;
     font-weight: 700;
@@ -101,14 +115,14 @@ image-gallery::part(caption) {
     color: #444;
     font-style: italic;
 }
-@media (any-hover: hover) {
+/* @media (any-hover: hover) {
     image-gallery::part(foo) {
         opacity: 0;
     }
 }
 image-gallery::part(foo):hover {
     opacity: 1;
-}
+} */
 image-gallery::part(button) {
     padding: 0%;
     border-radius: 50%;
@@ -193,9 +207,17 @@ footer {
     }
 }
 
+@media (max-width: 749px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
-
+    .mobile-only {
+        display: none;
+    }
 }
 
 /* Larger than desktop */

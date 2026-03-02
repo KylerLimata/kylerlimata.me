@@ -5,14 +5,10 @@ template="about_index.html"
 
 # About Me
 
-Hello! My name is Kyler Limata; I am currently working towards my Master in Mechanical Engineering degree at Saint Martin's University.
+I am a recent graduate of Saint Martin's University with both a Master of Science and a Bachelor of Science in Mechanical Engineering. I am seeking a role where I can apply my technical skill set to meaningful challenges, contribute to impactful projects, and continue growing as an engineer.
 
-My engineering journey started when I was young. From an early age, I was fascinated by mechanical systems and their complexities, particularly robots. This led to me taking two introductory engineering classes in high school.
+My academic project experience emphasizes modeling, simulation, and analytical problem-solving. I performed Finite Element Analysis (FEA) in ANSYS as part of my capstone project, [Spherical Fluid Pulsation Dampener](../projects/spherical-pulsation-dampener/), including both fluid and structural simulations. I also modeled and simulated a [2D robot arm](../projects/robot-arm/) using AutoLev and MATLAB, and automated stress calculations in Python by modeling the loading cycle of a [piston connecting rod](../projects/piston-connecting-rod/) for an internal combustion engines course. Additionally, I completed coursework in both linear and nonlinear optimization with a focus on engineering applications.
 
-After High School, I went to Saint Martin's University to study Mechanical Engineering. In 2022, I graduated with my Bachelor's degree and returned to Saint Martin's in 2023 to work on my Master in Mechanical Engineering.
+I am particularly interested in leveraging computational tools to automate repetitive design calculations, freeing up time to focus on critical engineering decisions. In fast-paced environments where design requirements can evolve, this approach enables rapid iteration and robust design outcomes.
 
-I am currently looking for a role where I can exercise my problem-solving skills and continue to grow and challenge myself as a Mechanical Engineer. My primary areas of interest are Control Systems, Mechatronics, and Robotics, though I am open to anything.
-
-------
-
-Outside of engineering, I enjoy reading books and spending time with my family, including taking walks and going on camping trips.
+Thank you for visiting my professional portfolio. If you believe my background aligns with your team’s needs, I would welcome the opportunity to connect via phone, email, or LinkedIn.

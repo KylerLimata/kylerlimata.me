@@ -1,17 +1,43 @@
 {% extends "base.html" %}
+{% import "macros/project_preview.html" as project %}
 
 {% block content %}
-<div style="margin-top: 5%">
-  <div class="one-half column">
-    {{ section.content | safe }}
-  </div>
-  <div class="one-half column">
-    <img class="profile-picture" src="{{ get_url(path="images/pfp.jpg") }}">
+<div style="margin-top: 5%" class="row">
+  <div class="mobile-only">
+  <img class="profile-picture", style="width: 40%; margin-left: auto; margin-right: auto; display: block;" src="{{ get_url(path="images/pfp.jpg") }}">
     <div style="text-align: center;">
-      <h5>Contact Info:</h5>
       <strong>email:</strong>
-      <a href="mailto: kyler.limata@gmail.com">kyler.limata@gmail.com</a>
+      <a href="mailto: kyler.limata@gmail.com">kyler.limata@gmail.com</a><br/>
+      <strong>phone:</strong> 253-324-8867<br/>
+      <strong>linkedin:</strong>
+      <a href="https://www.linkedin.com/in/kyler-limata">linkedin.com/in/kyler-limata</a>
     </div>
+  {{ section.content | safe }}
+  </div>
+  <div style="margin-top: 5%" class="hide-on-mobile">
+    <aside class="profile-box">
+      <img src="{{ get_url(path="images/pfp.jpg") }}">
+      <div style="text-align: center;">
+        <strong>email:</strong>
+        <a href="mailto: kyler.limata@gmail.com">kyler.limata@gmail.com</a><br/>
+        <strong>phone:</strong> 253-324-8867<br/>
+        <strong>linkedin:</strong>
+        <a href="https://www.linkedin.com/in/kyler-limata">linkedin.com/in/kyler-limata</a>
+      </div>
+    </aside>
+    <div>
+      {{ section.content | safe }}
+    </div>
+</div>
+</div>
+<div class="row">
+  <h1 style="text-align: center;">Projects</h1>
+  <hr>
+  <div style="width: 90%;margin-left: 5%;">
+    {% set project_section = get_section(path="projects/_index.md") %}
+    {% for page in project_section.pages %}
+    {{ project::project_preview(page=page) }}
+    {% endfor %}
   </div>
 </div>
 {% endblock content %}
