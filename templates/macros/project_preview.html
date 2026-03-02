@@ -1,10 +1,10 @@
 {%- macro project_preview(page) -%}
-<h3 class="mobile-only" >{{ page.title }}</h3>
+<h3 class="mobile-only">{{ page.title }}</h3>
     {% if page.extra.icon is defined %}
       <div class="row">
         <div class="four columns">
           {# Build path: "folder/subfolder/icon.png" #}
-          {% set icon_path = page.components | concat(with=page.extra.icon) | join(sep="/") %}
+          {% set icon_path = page.path ~ page.extra.icon %}
     
           <img src="{{ icon_path }}" style="width: 100%;display: block;margin-left: auto;margin-right: auto;" alt="{{ page.title }} icon">
         </div>
