@@ -1,0 +1,62 @@
+[
+    {
+        "src": "updated-results/qvt_-10_-10_updated.png",
+        "caption": "Link angles vs. time for TB = -10 Nm, TC = -10 Nm"
+    },
+    {
+        "src": "updated-results/uvt_-10_-10_updated.png",
+        "caption": "Link radial velocity vs. time for TB = -10 Nm, TC = -10 Nm"
+    },
+    {
+        "src": "updated-results/points_-10_-10_updated.png",
+        "caption": "Joint and end effector position for TB = -10 Nm, TC = -10 Nm"
+    },
+        {
+        "src": "updated-results/qvt_-10_-20_updated.png",
+        "caption": "Link angles vs. time for TB = -10 Nm, TC = -20 Nm"
+    },
+    {
+        "src": "updated-results/uvt_-10_-20_updated.png",
+        "caption": "Link radial velocity vs. time for TB = -10 Nm, TC = -20 Nm"
+    },
+    {
+        "src": "updated-results/points_-10_-20_updated.png",
+        "caption": "Joint and end effector position for TB = -10 Nm, TC = -20 Nm"
+    },
+        {
+        "src": "updated-results/qvt_-20_-10_updated.png",
+        "caption": "Link angles vs. time for TB = -20 Nm, TC = -10 Nm"
+    },
+    {
+        "src": "updated-results/uvt_-20_-10_updated.png",
+        "caption": "Link radial velocity vs. time for TB = -20 Nm, TC = -10 Nm"
+    },
+    {
+        "src": "updated-results/points_-20_-10_updated.png",
+        "caption": "Joint and end effector position for TB = -20 Nm, TC = -10 Nm"
+    },
+        {
+        "src": "updated-results/qvt_-20_-20_updated.png",
+        "caption": "Link angles vs. time for TB = -20 Nm, TC = -20 Nm"
+    },
+    {
+        "src": "updated-results/uvt_-20_-20_updated.png",
+        "caption": "Link radial velocity vs. time for TB = -20 Nm, TC = -20 Nm"
+    },
+    {
+        "src": "updated-results/points_-20_-20_updated.png",
+        "caption": "Joint and end effector position for TB = -20 Nm, TC = -20 Nm"
+    },
+        {
+        "src": "updated-results/qvt_notorque.png",
+        "caption": "Link angles vs. time for zero torque input"
+    },
+    {
+        "src": "updated-results/uvt_notorque.png",
+        "caption": "Link radial velocity vs. time for zero torque input"
+    },
+    {
+        "src": "updated-results/points_notorque.png",
+        "caption": "Joint and end effector position for zero torque input"
+    }
+]

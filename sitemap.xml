@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.kylerlimata.me/</loc>
+    </url>
+    <url>
+        <loc>https://www.kylerlimata.me/about/</loc>
+    </url>
+    <url>
+        <loc>https://www.kylerlimata.me/capstone-project/</loc>
+    </url>
+    <url>
+        <loc>https://www.kylerlimata.me/projects/</loc>
+    </url>
+    <url>
+        <loc>https://www.kylerlimata.me/projects/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.kylerlimata.me/projects/piston-connecting-rod/</loc>
+        <lastmod>2025-04-30</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kylerlimata.me/projects/robot-arm/</loc>
+        <lastmod>2024-02-28</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kylerlimata.me/projects/spherical-pulsation-dampener/</loc>
+        <lastmod>2022-04-30</lastmod>
+    </url>
+</urlset>

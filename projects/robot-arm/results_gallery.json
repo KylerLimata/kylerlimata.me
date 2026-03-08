@@ -1,0 +1,50 @@
+[
+    {
+        "src": "results/qvt_-10_-10.png",
+        "caption": "Link angles vs. time for TB = -10 Nm, TC = -10 Nm"
+    },
+    {
+        "src": "results/uvt_-10_-10.png",
+        "caption": "Link radial velocity vs. time for TB = -10 Nm, TC = -10 Nm"
+    },
+    {
+        "src": "results/yvx_-10_-10.png",
+        "caption": "Joint and end effector position for TB = -10 Nm, TC = -10 Nm"
+    },
+        {
+        "src": "results/qvt_-10_-20.png",
+        "caption": "Link angles vs. time for TB = -10 Nm, TC = -20 Nm"
+    },
+    {
+        "src": "results/uvt_-10_-20.png",
+        "caption": "Link radial velocity vs. time for TB = -10 Nm, TC = -20 Nm"
+    },
+    {
+        "src": "results/yvx_-10_-20.png",
+        "caption": "Joint and end effector position for TB = -10 Nm, TC = -20 Nm"
+    },
+        {
+        "src": "results/qvt_-20_-10.png",
+        "caption": "Link angles vs. time for TB = -20 Nm, TC = -10 Nm"
+    },
+    {
+        "src": "results/uvt_-20_-10.png",
+        "caption": "Link radial velocity vs. time for TB = -20 Nm, TC = -10 Nm"
+    },
+    {
+        "src": "results/yvx_-20_-10.png",
+        "caption": "Joint and end effector position for TB = -20 Nm, TC = -10 Nm"
+    },
+        {
+        "src": "results/qvt_-20_-20.png",
+        "caption": "Link angles vs. time for TB = -20 Nm, TC = -20 Nm"
+    },
+    {
+        "src": "results/uvt_-20_-20.png",
+        "caption": "Link radial velocity vs. time for TB = -20 Nm, TC = -20 Nm"
+    },
+    {
+        "src": "results/yvx_-20_-20.png",
+        "caption": "Joint and end effector position for TB = -20 Nm, TC = -20 Nm"
+    }
+]

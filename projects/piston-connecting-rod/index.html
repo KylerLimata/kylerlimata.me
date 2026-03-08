@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>
+Projects - Piston Connecting Rod
+</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://www.kylerlimata.me/css/normalize.css">
+  <link rel="stylesheet" href="https://www.kylerlimata.me/css/skeleton.css">
+  <link rel="stylesheet" href="https://www.kylerlimata.me/css/style.css">
+
+  <!-- Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="https://www.kylerlimata.me/main.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header class="row">
+    <div class="container">
+      <div class="site-info">
+        <img class="profile-picture circle" src="https://www.kylerlimata.me/images/pfp.jpg" />
+        <div class="title">
+          Kyler Limata
+        </div>
+      </div>
+      <div class="nav-links"><div class="nav-link-box">
+            <a href="https:&#x2F;&#x2F;www.kylerlimata.me" class="nav-link">Home</a>
+          </div></div>
+    </div>
+  </header>
+  <div class="row content">
+    <div class="container">
+      
+    <div style="margin-top: 5%;">
+        <h1 id="overview">Overview</h1>
+<hr />
+<p>As part of my Internal Combustion Engines course, I designed a piston connecting rod, developing parametric stress models and performing fatigue analysis under cyclic loading to guide design decisions. I wrote Python scripts to compute stresses across the full loading cycle at high resolution, enabling rapid iteration of key design parameters. The finalized geometry was modeled in Fusion 360 and exported to ANSYS for finite element stress analysis, where simulation results were compared against analytical predictions to inform stress model refinements.</p>
+<p>You can read the full project report <a href="https://www.kylerlimata.me/projects/piston-connecting-rod/MME540_KylerLimata_GradProjectReport.pdf">here</a> and view the Python code for this project on the <a href="https://github.com/KylerLimata/mme540-connecting-rod-project">GitHub repository</a></p>
+<h1 id="design-and-stress-analysis">Design and Stress Analysis</h1>
+<hr />
+<div class="row">
+    <div class="seven columns">
+        <p>As shown in the diagram, four different stress locations were selected for analysis:</p>
+<ol>
+<li>Where the fillet between the big end and the base end</li>
+<li>Where the end of the web is filleted</li>
+<li>At the surface before the web of the &quot;I-beam&quot; section rounds out</li>
+<li>The ring where the connecting rod connects to the wrist pin
+<br />
+<br />
+For the purposes of stress analysis, point 1 could straightforwardly be treated as a bar with a shoulder fillet and point 4 as an infinite plate with a round hole; the latter assumption holds up surprisingly well despite not being entirely accurate. Point two was a little more complicated; it could be treated as another bar with a shoulder fillet, but that doesn't take into account the flanges. I eventually discovered the best simplification was indeed as a bar with a shoulder fillet and computing the stresses at the center of the rod, with the caveat that the stress had to be multiplied by the percentage of the web area out of the total cross-sectional area.
+Point 3 was the most interesting as I attempted to model it as a combined plate with hole and a solid cross section, with a stress concentration. However, I found that not introducing a stress concentration gave more accurate results.</li>
+</ol>
+
+    </div>
+    <div class="five columns">
+        <img src="diagram.png" style="width: 50%;display: block;margin-left: auto;margin-right: auto;" />
+        <div class="caption">
+            The four stress locations
+        </div>
+    </div>
+</div><div class="row">
+    <div class="seven columns">
+        <p>Having derived the stress equations, I was able to leverage python to perform all the kinematic, pressure, and stress calculations at 200 crankshaft angles over the compression and power stroke of the piston. This enabled quick iteration over the design parameters including fillet radii, the width and thickness of the web, the width and length of the main connecting rod body and the size of both the big end and the ring of the small end.
+<br />
+<br />
+Design parameters were selected based on what minimized the loading stresses at all four points and a fatigue analysis of the design was performed under cyclic loading conditions using the Soderberg criterion. These parameters were used to create a parametric model in Fusion 360 so that the geometry could be imported into ANSYS for structural finite element analysis.</p>
+
+    </div>
+    <div class="five columns">
+        <img src="model.png" style="width: 50%;display: block;margin-left: auto;margin-right: auto;" />
+        <div class="caption">
+            Connecting rod model in Fusion 360
+        </div>
+    </div>
+</div><h1 id="fea-simulation">FEA Simulation</h1>
+<hr />
+<div class="row">
+    <div class="six columns">
+        It was necessary to determine the validity of the derived stress equations at each point using Finite Element Analysis in ANSYS. Due to issues with ANSYS, analysis was done at the crank angle of 6.38 radians - just at the start of the power stroke - instead of over the entire loading cycle. Initial results did show while points 1 and 4 were strongly accurate, refinements needed to be made to the design assumptions at points 2 and 3, including removing the stress concentration factor at point 3 and changing the representation of point 2. The final ANSYS results for normal, shear, and principal stresses are shown here.
+    </div>
+    <div class="six columns"><image-gallery src="ansys_gallery.json" left-arrow-src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;left-arrow.svg" right-arrow-src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;right-arrow.svg"></image-gallery>
+    </div>
+    
+</div>
+    </div>
+
+    </div>
+  </div>
+  <footer class="row">
+    <div style="margin-left: auto;margin-right: auto;width: fit-content;">
+      <div class="socials-box"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;kyler-limata-7a89a4237&#x2F;" class="social-link">
+            <img src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;socials&#x2F;LinkedIn_icon.svg" style="width: 32px;">
+          </a><a href="https:&#x2F;&#x2F;github.com&#x2F;KylerLimata" class="social-link">
+            <img src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;socials&#x2F;github-mark-white.svg" style="width: 32px;">
+          </a></div>
+      <div class="copyright-box">
+        Copyright &copy; 2024 Kyler Limata
+      </div>
+    </div>
+  </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

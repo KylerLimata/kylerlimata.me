@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>
+Projects - Spherical Fluid Pulsation Dampener
+</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://www.kylerlimata.me/css/normalize.css">
+  <link rel="stylesheet" href="https://www.kylerlimata.me/css/skeleton.css">
+  <link rel="stylesheet" href="https://www.kylerlimata.me/css/style.css">
+
+  <!-- Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="https://www.kylerlimata.me/main.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header class="row">
+    <div class="container">
+      <div class="site-info">
+        <img class="profile-picture circle" src="https://www.kylerlimata.me/images/pfp.jpg" />
+        <div class="title">
+          Kyler Limata
+        </div>
+      </div>
+      <div class="nav-links"><div class="nav-link-box">
+            <a href="https:&#x2F;&#x2F;www.kylerlimata.me" class="nav-link">Home</a>
+          </div></div>
+    </div>
+  </header>
+  <div class="row content">
+    <div class="container">
+      
+    <div style="margin-top: 5%;">
+        <h1 id="overview">Overview</h1>
+<hr />
+<p>For my Capstone Project, I collaborated with a partner to design and prototype a spherical fluid pulsation dampener demonstrating a passive, no-moving-parts fluid dampening concept based on prior research. I was responsible for modeling the components and producing detailed 2D engineering drawings in Autodesk Inventor, applying GD&amp;T standards to communicate the design. I extracted the internal fluid volume from the assembly for CFD analysis in ANSYS Fluent, where simulation results verified the vortex formation required for effective pulsation dampening. After evaluating machining and additive manufacturing options, we selected 3D printing to meet a $500 budget constraint. Performance was validated by designing and building a custom test apparatus using pressure transducers and a Raspberry Pi to measure inlet and outlet pressure response.</p>
+<h1 id="prototype-creation">Prototype Creation</h1>
+<hr />
+<h2 id="cad-modeling">CAD Modeling</h2>
+<div class="row">
+    <div class="six columns">
+        One of my responsibilities was creating the CAD model for the prototype. After iterating on the design, we settled on an assembly consisting of four different parts: two housing components with built-in pipes and separate receiver and distributor plates. The plates are only shown separately for presentation purposes as they were each 3D printed with half of the housing.
+    </div>
+    <div class="six columns"><image-gallery src="assembly_gallery.json" left-arrow-src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;left-arrow.svg" right-arrow-src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;right-arrow.svg"></image-gallery>
+    </div>
+    
+</div><h2 id="cad-drafting">CAD Drafting</h2>
+<div class="row">
+    <div class="six columns">
+        I was also responsible for converting the CAD model into the drawings seen here. These drawings follow the general dimensioning guidelines and are created, including the appropriate symbols for holes, radii, and diameters.
+    </div>
+    <div class="six columns"><image-gallery src="drawing_gallery.json" left-arrow-src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;left-arrow.svg" right-arrow-src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;right-arrow.svg"></image-gallery>
+    </div>
+    
+</div><h2 id="ansys-simulation">ANSYS Simulation</h2>
+<div class="row">
+    <div class="six columns">
+        From the assembly model, I was able to subtractively model the internal geometry in Inventor, which was required for simulating the internal fluid dynamics in ANSYS. This simulation was performed in ANSYS fluent, which provided a look at the fluid velocity streamlines. Not only was the expected vortex clearly demonstrated, but fluid velocity rapidly slowed as it left the nozzles of the distributor plate, only speeding back up in the receiver plate, indicative of the desired dampening effect.&lt;br&gt;&lt;br&gt;
+
+Fluent also provided fluid pressure data which was fed into ANSYS structural, allowing us to verify that the dampener was structurally stable under the fluid loading conditions.
+    </div>
+    <div class="six columns"><image-gallery src="ansys_gallery.json" left-arrow-src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;left-arrow.svg" right-arrow-src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;right-arrow.svg"></image-gallery>
+    </div>
+    
+</div> <h1 id="testing-and-results">Testing and Results</h1>
+<hr />
+<h2 id="development-of-testing-apparatus">Development of Testing Apparatus</h2>
+<div class="row">
+    <div class="seven columns">
+        To test the prototype, we used a cheap aquarium pump and pressure sensors as close to the inlet and outlet as possible. These pressure sensors had a range of 0 to 10 psi, or 0 to 64 kPa. With an input of 5v, the pressure range would translate to an output of 0.5v to 4.5v, but the output range would decrease to match a lower input voltage.
+    </div>
+    <div class="five columns">
+        <iframe
+            src="https://www.youtube.com/embed/j80AP9xh_D0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen>
+        </iframe>
+    </div>
+</div><div class="row">
+    <div class="seven columns">
+        In order to record data, I also wrote a command line program for the Raspberry Pi Zero W that would interface with an ADS1115 Analog to Digital converter. This program would record data for a specified amount of seconds and a specified time interval. It would then output a graph for immediate viewing and an Excel file containing the recorded data. The setup for the raspberry pi is shown on the right and the code for the command line program can be found on the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;KylerLimata&#x2F;pressure_recorder&quot;&gt;GitHub Repository&lt;&#x2F;a&gt;.
+    </div>
+    <div class="five columns">
+        <img src="raspberrypi.jpg" style="width: 100%;" />
+        <div class="caption">
+            Raspberry Pi Setup
+        </div>
+    </div>
+</div><h2 id="results">Results</h2>
+<div class="row">
+    <div class="six columns">
+        The results of our experiments can be seen here; while the damping effect was not as much as initially expected, the actual damping effect is clearly demonstrated. As the graphs show, the inlet pressure significantly and unpredicably fluctuates while outlet pressure is lower and almost perfectly smooth, at least in comparison to the inlet pressure.
+    </div>
+    <div class="six columns"><image-gallery src="trials_gallery.json" left-arrow-src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;left-arrow.svg" right-arrow-src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;gallery&#x2F;right-arrow.svg"></image-gallery>
+    </div>
+    
+</div>
+    </div>
+
+    </div>
+  </div>
+  <footer class="row">
+    <div style="margin-left: auto;margin-right: auto;width: fit-content;">
+      <div class="socials-box"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;kyler-limata-7a89a4237&#x2F;" class="social-link">
+            <img src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;socials&#x2F;LinkedIn_icon.svg" style="width: 32px;">
+          </a><a href="https:&#x2F;&#x2F;github.com&#x2F;KylerLimata" class="social-link">
+            <img src="https:&#x2F;&#x2F;www.kylerlimata.me&#x2F;images&#x2F;socials&#x2F;github-mark-white.svg" style="width: 32px;">
+          </a></div>
+      <div class="copyright-box">
+        Copyright &copy; 2024 Kyler Limata
+      </div>
+    </div>
+  </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
