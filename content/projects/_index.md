@@ -4,4 +4,5 @@ sort_by="date"
 template="projects_index.html"
 page_template="project.html"
 paginate_by=100
+redirect_to="../"
 +++
